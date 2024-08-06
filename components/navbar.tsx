@@ -5,15 +5,20 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
+import localFont from "next/font/local";
+
+const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <div>
-      <div className="bg-black static m-2 mb-0 rounded-2xl flex text-white items-center justify-between px-6 py-4 md:px-6 sm:px-2">
+      <div className="bg-black static m-2 mb-0 rounded-2xl flex text-white items-center justify-between px-6 py-6 md:px-6 sm:px-2">
         <Link href="/">
-          <Image src="/images/logo.png" width={150} height={150} alt="logo" />
+          <h1 className={`${spacex.className} text-3xl`}>
+            Tech<span className="text-mOrange">X</span>
+          </h1>
         </Link>
         <div className="hidden md:flex gap-7 text-lg justify-center flex-1">
           <Link
