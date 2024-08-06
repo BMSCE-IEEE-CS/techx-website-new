@@ -18,7 +18,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${roboto.className} bg-background text-white`}>
-        <Navbar />
         <main>{children}</main>
       </body>
     </html>

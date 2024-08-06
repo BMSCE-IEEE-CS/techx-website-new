@@ -10,7 +10,13 @@ const config: Config = {
     extend: {
       colors: {
         background: "#353535",
-        mOrange: "#f77f00",
+        mOrange: "#f79400",
+      },
+      backgroundImage: {
+        hero: "url(/images/techx.png)",
+      },
+      dropShadow: {
+        orangeDrop: "10px 10px 0 rgb(247, 148, 0)",
       },
     },
   },

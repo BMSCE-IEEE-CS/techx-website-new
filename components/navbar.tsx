@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="bg-black static m-2 mb-0 rounded-2xl flex text-white items-center justify-between px-6 py-6 md:px-6 sm:px-2">
+      <div className="static flex text-white items-center justify-between px-2 py-6 md:px-10 sm:px-2">
         <Link href="/">
           <h1 className={`${spacex.className} text-3xl`}>
             Tech<span className="text-mOrange">X</span>
@@ -22,31 +22,31 @@ const Navbar = () => {
         </Link>
         <div className="hidden md:flex gap-7 text-lg justify-center flex-1">
           <Link
-            className="p-0.5 border-b-4 border-transparent hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
             href="#features"
           >
             About Us
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
             href="#faq"
           >
             Event
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
             href="/about"
           >
             Sponsors
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
             href="/about"
           >
             Pricing Plan
@@ -88,7 +88,7 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-black m-5 mt-0 rounded-b-2xl text-white px-4 py-3">
+        <div className="md:hidden bg-black rounded-b-2xl text-white px-4 py-3">
           <div className="flex flex-col gap-3 text-base">
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
