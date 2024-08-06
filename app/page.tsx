@@ -1,28 +1,15 @@
-// import localFont from "next/font/local";
-// const spacex = localFont({ src: "../app/SpaceX.ttf" });
-
-// export default function Home() {
-//   return (
-//     <div className="flex flex-col w-full min-h-screen bg-hero items-center justify-center bg-no-repeat bg-cover">
-//       <div>
-//         <div>
-//           <p className="text-2xl">IEEE CS</p>
-//           <h1 className={`${spacex.className} text-6xl`}>
-//             Tech<span>X</span>
-//           </h1>
-//           <h1></h1>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// }
+'use client'
 
 import Navbar from "@/components/navbar";
 import localFont from "next/font/local";
 import Link from "next/link";
+import useCountdown from "@/components/CountdownTimer";  
+
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 export default function Home() {
+  const { days, hours, minutes, seconds } = useCountdown("2024-09-13T00:00:00");
+
   return (
     <div className="bg-hero bg-no-repeat bg-cover flex flex-col w-full min-h-screen">
       <div className="absolute inset-0 bg-gradient-to-tr from-mOrange via-black to-black opacity-70 z-0"></div>
@@ -30,6 +17,12 @@ export default function Home() {
         <Navbar />
         <div className="relative flex flex-col items-center bg-no-repeat bg-cover">
           <div className="flex flex-col mt-52">
+            <div className="text-center mb-10">
+              <h2 className="text-3xl text-white font-bold -mt-110">COMING SOON!</h2>
+              <div className="text-white text-2xl mt-4">
+                {days}d {hours}h {minutes}m {seconds}s
+              </div>
+            </div>
             <div>
               <p className="text-3xl text-mOrange font-bold">IEEE CS</p>
               <h1 className={`${spacex.className} text-7xl text-white`}>
