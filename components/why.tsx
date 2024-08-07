@@ -4,7 +4,7 @@ import Image from "next/image";
 const Why = () => {
   return (
     <div className="relative w-full py-20 flex flex-col items-center justify-center">
-      <div className="absolute inset-0 bg-gradient-to-bl from-black to-mOrange opacity-80 z-0"></div>
+      <div className="absolute inset-0 bg-black opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col md:flex-row gap-20 items-center justify-center w-5/6">
         <Image
           className="w-1/2 md:w-1/3 sm:w-1/2 border-8 rounded-xl border-gray-800"
