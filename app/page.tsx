@@ -3,12 +3,12 @@
 import Navbar from "@/components/navbar";
 import localFont from "next/font/local";
 import Link from "next/link";
-import useCountdown from "@/components/CountdownTimer";
+import {Timer} from "../components/Timer"
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 export default function Home() {
-  const { days, hours, minutes, seconds } = useCountdown("2024-09-13T00:00:00");
+
 
   return (
     <div className="bg-hero bg-no-repeat bg-cover flex flex-col w-full min-h-screen">
@@ -19,24 +19,7 @@ export default function Home() {
           <div className="flex flex-col mt-52">
             <div className="text-center mb-10">
               <h2 className="text-3xl text-white font-bold -mt-[130px]">COMING SOON!</h2> <br />
-              <div className="flex space-x-4 mt-4">
-                <div className="flex flex-col items-center bg-gray-800 rounded-lg p-4" style={{ fontSize: "90px", width:"100px" }}>
-                  <span className="text-4xl text-mOrange"  style={{fontWeight:"600"}}>{days}</span>
-                  <span className="text-lg text-white"  style={{fontWeight:"600"}}>Days</span>
-                </div>
-                <div className="flex flex-col items-center bg-gray-800 rounded-lg p-4" style={{ fontSize: "90px" , width:"100px" }}>
-                  <span className="text-4xl text-mOrange" style={{fontWeight:"600"}}>{hours}</span>
-                  <span className="text-lg text-white"  style={{fontWeight:"600"}}>Hours</span>
-                </div>
-                <div className="flex flex-col items-center bg-gray-800 rounded-lg p-4" style={{ fontSize: "90px" , width:"100px" }}>
-                  <span className="text-4xl text-mOrange"  style={{fontWeight:"600"}}>{minutes}</span>
-                  <span className="text-lg text-white" style={{fontWeight:"600"}}>Minutes</span>
-                </div>
-                <div className="flex flex-col items-center bg-gray-800 rounded-lg p-4" style={{ fontSize: "90px" , width:"100px" }}>
-                  <span className="text-4xl text-mOrange"  style={{fontWeight:"600"}}>{seconds}</span>
-                  <span className="text-lg text-white"  style={{fontWeight:"600"}}>Seconds</span>
-                </div>
-              </div>
+              <Timer/>
             </div>
             <div>
               <p className="text-3xl text-mOrange font-bold">IEEE CS</p>
