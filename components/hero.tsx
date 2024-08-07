@@ -113,7 +113,7 @@ const Hero = () => {
                   Purchase Ticket
                 </Link>
               </div>
-              <div className="flex flex-col md:flex-row mt-10 items-center gap-4">
+              {/* <div className="flex flex-col md:flex-row mt-10 items-center gap-4">
                 <h1>Event Sponsored By:</h1>
                 <Image
                   src="/images/syplogo.png"
@@ -121,7 +121,7 @@ const Hero = () => {
                   height={300}
                   alt="syp logo"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

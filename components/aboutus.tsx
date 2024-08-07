@@ -1,37 +1,37 @@
 import localFont from "next/font/local";
-import Image from "next/image";
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const AboutUs = () => {
   return (
-    <div className="relative w-full py-20 flex flex-col items-center">
-      <div className="absolute inset-0 bg-gradient-to-br from-mOrange  to-black opacity-80 z-0"></div>
-      <div className="relative z-10 flex flex-col  items-center w-full">
-        <Image
-          className="w-1/2 md:w-1/3 sm:w-1/2 border-8 rounded-xl border-gray-800"
-          src="/images/aboutimg.jpg"
-          width={512}
-          height={512}
-          alt="About image"
-        />
-        <h1 className="text-3xl md:text-6xl font-bold mt-10 drop-shadow-orangeDrop">
+    <div className="card text-white w-50" style={{ width: "70rem", margin: "80px auto", background: "linear-gradient(to bottom, #ff8008, #f5a52f)" }}>
+      <div className="card-body">
+        <h1 className="text-3xl md:text-6xl font-bold mt-10 drop-shadow-orangeDrop text-center">
           What is{" "}
           <span className={spacex.className}>
-            TechX<sup className="ml-8">24</sup>
+            TechX<sup className="ml-7">24</sup>
           </span>
         </h1>
-        <p className="w-5/6 md:w-3/5 text-justify mt-5 text-xl">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
-          et tempus urna. Quisque posuere tellus at blandit vehicula. Aliquam
-          feugiat congue nulla, et euismod dolor vehicula et. Morbi tellus
-          lorem, placerat vitae lacinia id, aliquam vitae nisl. Phasellus
-          posuere porttitor tempor. Curabitur at lacus eget felis malesuada
-          venenatis et sit amet risus. Vestibulum sagittis tincidunt justo, sit
-          amet finibus risus congue a. Curabitur quis luctus justo, et aliquet
-          tortor. Nunc sit amet ligula at libero suscipit cursus non vel enim.
+        <p className="text-center mt-6">
+          <strong>TechX</strong> is a comprehensive event organized by the IEEE Computer Society's Student and Young Professionals community. Jointly hosted by BMSCE IEEE Computer Society and Christ University IEEE Computer Society, it offers a platform for students to explore emerging technologies, enhance soft skills, develop leadership abilities, and engage with industry professionals. Aligned with the "Tech, Train, Lead, Engage, Unique" motto, TechX aims to cultivate well-rounded tech leaders of tomorrow by providing a holistic learning experience.
         </p>
+        <div className="card-actions flex-col mt-6">
+          <p className="flex items-center ml-7 mb-4">
+            <span className="mr-3">
+              <FontAwesomeIcon icon={faCalendar} style={{ width: "20px" }} />
+            </span>
+            13th, 14th and 15th September, 2024
+          </p>
+          <p className="flex items-center ml-7">
+            <span className="mr-3">
+              <FontAwesomeIcon icon={faLocationDot} style={{ width: "20px" }} />
+            </span>
+            Bengaluru, India
+          </p>
+        </div>
       </div>
     </div>
   );

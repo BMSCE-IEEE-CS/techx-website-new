@@ -4,7 +4,7 @@ import Why from "@/components/why";
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col bg-black">
       <Hero />
       <AboutUs />
       <Why />
