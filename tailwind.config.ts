@@ -16,7 +16,10 @@ const config: Config = {
         hero: "url(/images/techx.png)",
       },
       dropShadow: {
-        orangeDrop: "10px 10px 0 rgb(247, 148, 0)",
+        orangeDrop: "6px 2px 2px rgb(247, 148, 0)",
+      },
+      listStyleType: {
+        points: "url(/images/arrow.png)",
       },
     },
   },
