@@ -1,0 +1,76 @@
+import localFont from "next/font/local";
+import React from "react";
+import EventCard from "./card/eventcard";
+
+const spacex = localFont({ src: "../app/SpaceX.ttf" });
+
+const eventsData = {
+  data: [
+    {
+      name: "Event 1",
+      image: "/images/aboutimg.jpg",
+      day: "Day 1",
+    },
+    {
+      name: "Event 2",
+      image: "/images/aboutimg.jpg",
+      day: "Day 1",
+    },
+    {
+      name: "Event 3",
+      image: "/images/aboutimg.jpg",
+      day: "Day 1",
+    },
+    {
+      name: "Event 4",
+      image: "/images/aboutimg.jpg",
+      day: "Day 1",
+    },
+    {
+      name: "Event 5",
+      image: "/images/aboutimg.jpg",
+      day: "Day 2",
+    },
+    {
+      name: "Event 6",
+      image: "/images/aboutimg.jpg",
+      day: "Day 2",
+    },
+    {
+      name: "Event 7",
+      image: "/images/aboutimg.jpg",
+      day: "Day 2",
+    },
+  ],
+};
+
+const Events = () => {
+  return (
+    <div
+      id="events"
+      className="relative w-full py-20 flex flex-col items-center justify-center min-h-screen"
+    >
+      <div className="absolute inset-0 bg-gradient-to-b from-mOrange to-black opacity-80 z-0"></div>
+      <div className="relative z-10 flex flex-col items-center justify-center">
+        <h1 className={`${spacex.className} text-5xl drop-shadow-orangeDrop`}>
+          Events
+        </h1>
+        <p className="text-xl mt-4 font-mono">
+          Explore the Exciting Lineup of Events Ahead
+        </p>
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3 m-10 mt-20">
+          {eventsData.data.map((event, id) => (
+            <EventCard
+              name={event.name}
+              image={event.image}
+              day={event.day}
+              key={id}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Events;

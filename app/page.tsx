@@ -1,6 +1,7 @@
 import Hero from "@/components/hero";
 import AboutUs from "@/components/aboutus";
 import Why from "@/components/why";
+import Events from "@/components/events";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Why />
+      <Events />
     </div>
   );
 }
