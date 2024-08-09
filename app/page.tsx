@@ -2,6 +2,7 @@ import Hero from "@/components/hero";
 import AboutUs from "@/components/aboutus";
 import Why from "@/components/why";
 import Events from "@/components/events";
+import Schedule from "@/components/schedule";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <AboutUs />
       <Why />
       <Events />
+      <Schedule />
     </div>
   );
 }

@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="static flex text-white items-center justify-between px-2 py-6 md:px-10 sm:px-2">
+      <div className="static flex text-white items-center justify-between px-4 py-6 md:px-10 sm:px-2">
         <Link href="/">
           <h1 className={`${spacex.className} text-3xl`}>
             Tech<span className="text-mOrange">X</span>
@@ -28,31 +28,31 @@ const Navbar = () => {
           </Link>
           <Link
             className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
-            href="#features"
+            href="#about"
           >
             About Us
           </Link>
           <Link
             className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
-            href="#faq"
+            href="#events"
           >
             Event
           </Link>
           <Link
             className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
-            href="/about"
+            href="#sponsors"
           >
             Sponsors
           </Link>
           <Link
             className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
-            href="/about"
+            href="#pricing"
           >
             Pricing Plan
           </Link>
         </div>
         <div className="md:hidden flex items-center gap-2">
-          {isMenuOpen ? (
+          {/* {isMenuOpen ? (
             <div></div>
           ) : (
             <Link
@@ -61,9 +61,9 @@ const Navbar = () => {
               passHref
               target="_blank"
             >
-              Buy Ticket
+              Tickets
             </Link>
-          )}
+          )} */}
           <button
             className=" px-4 py-2 rounded-xl border-mOrange border-2 transition-all duration-150 ease-in"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -97,25 +97,25 @@ const Navbar = () => {
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
-              href="#features"
+              href="#about"
             >
               About Us
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
-              href="#faq"
+              href="#events"
             >
               Event
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
-              href="/about"
+              href="/sponsors"
             >
               Sponsors
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
-              href="/about"
+              href="#pricing"
             >
               Pricing Plan
             </Link>

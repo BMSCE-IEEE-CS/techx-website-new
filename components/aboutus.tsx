@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCalendar, faLocationDot } from "@fortawesome/free-solid-svg-icons";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <div
       id="about"
-      className="card text-white w-[90%] sm:w-4/5 lg:w-[70rem] mx-auto my-20 p-0 sm:p-8 lg:p-6 bg-gradient-to-b from-[#cc6600] to-[#d88c1f]"
+      className="card text-white my-20 bg-gradient-to-b w-4/5 md:w-3/4 mx-auto from-[#cc6600] to-[#d88c1f]"
     >
       <div className="card-body">
         <h1 className="text-3xl md:text-6xl font-bold mt-10 drop-shadow-orangeDrop text-center">
@@ -32,13 +32,13 @@ const AboutUs = () => {
         <div className="card-actions flex flex-col mt-6">
           <p className="flex items-center mb-4">
             <span className="mr-3">
-              <FontAwesomeIcon icon={faCalendar} style={{ width: "20px" }} />
+              <FaCalendarAlt size={25} />
             </span>
             13th, 14th and 15th September, 2024
           </p>
           <p className="flex items-center">
             <span className="mr-3">
-              <FontAwesomeIcon icon={faLocationDot} style={{ width: "20px" }} />
+              <FaLocationDot size={25} />
             </span>
             Bengaluru, India
           </p>
