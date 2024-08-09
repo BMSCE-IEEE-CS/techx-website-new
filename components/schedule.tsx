@@ -20,38 +20,33 @@ const Schedule = () => {
       <p className="text-lg text-center md:text-xl mt-4 font-mono">
         Stay on Top with Our Event Schedule
       </p>
-      <div className="mt-10">
+      <div className="mt-10 flex flex-wrap justify-center">
         <button
           onClick={() => setDay(1)}
-          className={`${
-            spacex.className
-          } border-2 border-mOrange px-4 py-2 m-1 mr-5 text-lg rounded-l-full ${
-            day === 1 ? "bg-mOrange text-black" : ""
-          }`}
+          className={`${spacex.className
+            } border-2 border-mOrange px-4 py-2 m-1 text-lg rounded-l-full ${day === 1 ? "bg-mOrange text-black" : ""
+            }`}
         >
           Day 1
         </button>
         <button
           onClick={() => setDay(2)}
-          className={`${
-            spacex.className
-          } border-2 border-mOrange px-4 py-2 m-1 mr-5 ml-5 text-lg  ${
-            day === 2 ? "bg-mOrange text-black" : ""
-          }`}
+          className={`${spacex.className
+            } border-2 border-mOrange px-4 py-2 m-1 text-lg ${day === 2 ? "bg-mOrange text-black" : ""
+            }`}
         >
           Day 2
         </button>
         <button
           onClick={() => setDay(3)}
-          className={`${
-            spacex.className
-          } border-2 border-mOrange px-4 py-2 m-1 text-lg ml-5 rounded-r-full ${
-            day === 3 ? "bg-mOrange text-black" : ""
-          }`}
+          className={`${spacex.className
+            } border-2 border-mOrange px-4 py-2 m-1 text-lg rounded-r-full ${day === 3 ? "bg-mOrange text-black" : ""
+            }`}
         >
           Day 3
         </button>
       </div>
+
       <div className="mt-10">
         {day === 1 && (
           <div className="space-y-6 border-l-2 border-dashed">
@@ -118,7 +113,7 @@ const Schedule = () => {
             ))}
           </div>
         )}
-          {day === 3 && (
+        {day === 3 && (
           <div className="space-y-6 border-l-2 border-dashed">
             {schedule.day3.map((s, id) => (
               <div key={id} className="relative w-full">
