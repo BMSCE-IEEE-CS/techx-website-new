@@ -3,7 +3,7 @@ import AboutUs from "@/components/aboutus";
 import Why from "@/components/why";
 import Events from "@/components/events";
 import Schedule from "@/components/schedule";
-import Sponsors  from "@/components/sponsors";
+import Sponsors from "@/components/sponsors";
 
 export default function Home() {
   return (
@@ -11,9 +11,9 @@ export default function Home() {
       <Hero />
       <AboutUs />
       <Why />
-      <Events />
+      {/* <Events /> */}
       <Schedule />
-      <Sponsors/>
+      <Sponsors />
     </div>
   );
 }

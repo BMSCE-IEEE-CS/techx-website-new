@@ -34,9 +34,9 @@ const Navbar = () => {
           </Link>
           <Link
             className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
-            href="#events"
+            href="#schedule"
           >
-            Event
+            Schedule
           </Link>
           <Link
             className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
@@ -103,9 +103,9 @@ const Navbar = () => {
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
-              href="#events"
+              href="#schedule"
             >
-              Event
+              Schedule
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"

@@ -10,7 +10,7 @@ const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const Sponsorts = () => {
   return (
     <div
-      id="events"
+      id="sponsors"
       className="relative py-20 flex flex-col items-center justify-center"
     >
       <div className="absolute inset-0 bg-gradient-to-b from-black to-mOrange opacity-80 z-0"></div>

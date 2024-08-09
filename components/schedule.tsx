@@ -11,7 +11,10 @@ const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const Schedule = () => {
   const [day, setDay] = useState(1);
   return (
-    <div className="w-full mx-auto flex flex-col py-20 items-center justify-center">
+    <div
+      id="schedule"
+      className="w-full mx-auto flex flex-col py-20 items-center justify-center"
+    >
       <h1
         className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop `}
       >
