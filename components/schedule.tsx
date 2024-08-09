@@ -24,7 +24,7 @@ const Schedule = () => {
         <button
           onClick={() => setDay(1)}
           className={`${spacex.className
-            } border-2 border-mOrange px-4 py-2 m-1 text-lg rounded-l-full ${day === 1 ? "bg-mOrange text-black" : ""
+            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${day === 1 ? "bg-mOrange text-black" : ""
             }`}
         >
           Day 1
@@ -32,7 +32,7 @@ const Schedule = () => {
         <button
           onClick={() => setDay(2)}
           className={`${spacex.className
-            } border-2 border-mOrange px-4 py-2 m-1 text-lg ${day === 2 ? "bg-mOrange text-black" : ""
+            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${day === 2 ? "bg-mOrange text-black" : ""
             }`}
         >
           Day 2
@@ -40,13 +40,12 @@ const Schedule = () => {
         <button
           onClick={() => setDay(3)}
           className={`${spacex.className
-            } border-2 border-mOrange px-4 py-2 m-1 text-lg rounded-r-full ${day === 3 ? "bg-mOrange text-black" : ""
+            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${day === 3 ? "bg-mOrange text-black" : ""
             }`}
         >
           Day 3
         </button>
       </div>
-
       <div className="mt-10">
         {day === 1 && (
           <div className="space-y-6 border-l-2 border-dashed">
