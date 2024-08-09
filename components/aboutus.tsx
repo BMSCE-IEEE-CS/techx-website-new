@@ -9,7 +9,7 @@ const AboutUs = () => {
   return (
     <div
       id="about"
-      className="card text-white my-20 bg-gradient-to-b w-[90%] md:w-3/4 mx-auto from-[#cc6600] to-[#d88c1f]"
+      className="card text-white my-20 bg-gradient-to-b w-[90%] md:w-[90%] mx-auto from-[#cc6600] to-[#d88c1f]"
     >
       <div className="card-body">
         <h1 className="text-3xl md:text-6xl font-bold mt-10 drop-shadow-orangeDrop text-center">

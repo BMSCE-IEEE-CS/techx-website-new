@@ -3,6 +3,7 @@ import AboutUs from "@/components/aboutus";
 import Why from "@/components/why";
 import Events from "@/components/events";
 import Schedule from "@/components/schedule";
+import Sponsors  from "@/components/sponsors";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Why />
       <Events />
       <Schedule />
+      <Sponsors/>
     </div>
   );
 }
