@@ -109,7 +109,7 @@ const Navbar = () => {
             </Link>
             <Link
               className="p-2  rounded-xl transition-all duration-150 ease-in"
-              href="/sponsors"
+              href="#sponsors"
             >
               Sponsors
             </Link>
