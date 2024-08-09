@@ -51,6 +51,32 @@ export const schedule = {
       location: "Venue 6",
     },
   ],
+  day3: [
+    {
+      name: "Event 7",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+      rp: "Resource Person 7",
+      time: "9:00 AM - 10:00 AM",
+      location: "Venue 7",
+    },
+    {
+      name: "Event 8",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+      rp: "Resource Person 8",
+      time: "10:00 AM - 11:00 AM",
+      location: "Venue 8",
+    },
+    {
+      name: "Event 9",
+      description:
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+      rp: "Resource Person 9",
+      time: "11:00 AM - 12:00 PM",
+      location: "Venue 9",
+    },
+  ],
 };
 
 export const eventsData = {

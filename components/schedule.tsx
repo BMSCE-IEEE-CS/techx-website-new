@@ -25,7 +25,7 @@ const Schedule = () => {
           onClick={() => setDay(1)}
           className={`${
             spacex.className
-          } border-2 border-mOrange px-4 py-2 m-1 text-lg rounded-l-full ${
+          } border-2 border-mOrange px-4 py-2 m-1 mr-5 text-lg rounded-l-full ${
             day === 1 ? "bg-mOrange text-black" : ""
           }`}
         >
@@ -35,15 +35,25 @@ const Schedule = () => {
           onClick={() => setDay(2)}
           className={`${
             spacex.className
-          } border-2 border-mOrange px-4 py-2 m-1 text-lg rounded-r-full ${
+          } border-2 border-mOrange px-4 py-2 m-1 mr-5 ml-5 text-lg  ${
             day === 2 ? "bg-mOrange text-black" : ""
           }`}
         >
           Day 2
         </button>
+        <button
+          onClick={() => setDay(3)}
+          className={`${
+            spacex.className
+          } border-2 border-mOrange px-4 py-2 m-1 text-lg ml-5 rounded-r-full ${
+            day === 3 ? "bg-mOrange text-black" : ""
+          }`}
+        >
+          Day 3
+        </button>
       </div>
       <div className="mt-10">
-        {day === 1 ? (
+        {day === 1 && (
           <div className="space-y-6 border-l-2 border-dashed">
             {schedule.day1.map((s, id) => (
               <div key={id} className="relative w-full">
@@ -75,9 +85,42 @@ const Schedule = () => {
               </div>
             ))}
           </div>
-        ) : (
+        )}  {day === 2 && (
           <div className="space-y-6 border-l-2 border-dashed">
             {schedule.day2.map((s, id) => (
+              <div key={id} className="relative w-full">
+                <div className="absolute  z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
+                <div className="ml-6 space-y-2">
+                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
+                  <p className="mt-2 max-w-screen-sm text-base text-gray-400">
+                    {s.description}
+                  </p>
+                  <div className="flex items-center gap-2">
+                    <MdPerson size={20} />
+                    <p className="mt-1 block text-sm font-semibold text-yellow-300">
+                      {s.rp}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaRegClock size={20} />
+                    <p className="mt-1 block text-sm font-semibold text-yellow-300">
+                      {s.time}
+                    </p>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <FaLocationDot size={20} />
+                    <p className="mt-1 block text-sm font-semibold text-yellow-300">
+                      {s.location}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+          {day === 3 && (
+          <div className="space-y-6 border-l-2 border-dashed">
+            {schedule.day3.map((s, id) => (
               <div key={id} className="relative w-full">
                 <div className="absolute  z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
                 <div className="ml-6 space-y-2">
