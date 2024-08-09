@@ -11,44 +11,50 @@ const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const Schedule = () => {
   const [day, setDay] = useState(1);
   return (
-    <div className="w-3/4 mx-auto flex flex-col py-20 items-center justify-center">
+    <div className="w-full mx-auto flex flex-col py-20 items-center justify-center">
       <h1
         className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop `}
       >
         SCHEDULE
       </h1>
-      <p className="text-lg text-center md:text-xl mt-4 font-mono">
+      <p className="text-lg text-center w-3/4 md:text-xl mt-4 font-mono">
         Stay on Top with Our Event Schedule
       </p>
       <div className="mt-10 flex flex-wrap justify-center">
         <button
           onClick={() => setDay(1)}
-          className={`${spacex.className
-            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${day === 1 ? "bg-mOrange text-black" : ""
-            }`}
+          className={`${
+            spacex.className
+          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
+            day === 1 ? "bg-mOrange text-black" : ""
+          }`}
         >
           Day 1
         </button>
         <button
           onClick={() => setDay(2)}
-          className={`${spacex.className
-            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${day === 2 ? "bg-mOrange text-black" : ""
-            }`}
+          className={`${
+            spacex.className
+          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
+            day === 2 ? "bg-mOrange text-black" : ""
+          }`}
         >
           Day 2
         </button>
         <button
           onClick={() => setDay(3)}
-          className={`${spacex.className
-            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${day === 3 ? "bg-mOrange text-black" : ""
-            }`}
+          className={`${
+            spacex.className
+          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
+            day === 3 ? "bg-mOrange text-black" : ""
+          }`}
         >
           Day 3
         </button>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 w-3/4 md:w-max mx-auto">
         {day === 1 && (
-          <div className="space-y-6 border-l-2 border-dashed">
+          <div className="space-y-6 border-l-2 mx-auto border-dashed">
             {schedule.day1.map((s, id) => (
               <div key={id} className="relative w-full">
                 <div className="absolute  z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
@@ -79,7 +85,8 @@ const Schedule = () => {
               </div>
             ))}
           </div>
-        )}  {day === 2 && (
+        )}{" "}
+        {day === 2 && (
           <div className="space-y-6 border-l-2 border-dashed">
             {schedule.day2.map((s, id) => (
               <div key={id} className="relative w-full">
