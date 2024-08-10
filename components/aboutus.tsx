@@ -1,5 +1,8 @@
+'use client'
+
 import localFont from "next/font/local";
 import React from "react";
+import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 
@@ -7,9 +10,13 @@ const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const AboutUs = () => {
   return (
-    <div
+    <motion.div
       id="about"
       className="card text-white my-20 bg-gradient-to-b w-[90%] md:w-[90%] mx-auto from-[#cc6600] to-[#d88c1f]"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
     >
       <div className="card-body">
         <h1 className="text-3xl md:text-6xl font-bold mt-10 drop-shadow-orangeDrop text-center">
@@ -44,7 +51,7 @@ const AboutUs = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

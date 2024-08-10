@@ -1,12 +1,21 @@
+'use client'
+
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Why = () => {
   return (
-    <div className="relative py-20 flex flex-col items-center justify-center">
+    <motion.div
+      className="relative py-20 flex flex-col items-center justify-center"
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
+    >
       <div className="absolute inset-0 bg-gradient-to-b from-black to-mOrange opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center justify-center">
         <h1
@@ -35,7 +44,7 @@ const Why = () => {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,19 +1,25 @@
-"use client";
+"use client"
 
 import { schedule } from "@/utils/data";
 import localFont from "next/font/local";
 import React, { useState } from "react";
 import { FaLocationDot, FaRegClock } from "react-icons/fa6";
 import { MdPerson } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Schedule = () => {
   const [day, setDay] = useState(1);
+
   return (
-    <div
+    <motion.div
       id="schedule"
       className="w-full mx-auto flex flex-col py-20 items-center justify-center"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: true }}
     >
       <h1
         className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop `}
@@ -60,7 +66,7 @@ const Schedule = () => {
           <div className="space-y-6 border-l-2 mx-auto border-dashed">
             {schedule.day1.map((s, id) => (
               <div key={id} className="relative w-full">
-                <div className="absolute  z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
+                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
                 <div className="ml-6 space-y-2">
                   <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
                   <p className="mt-2 max-w-screen-sm text-base text-gray-400">
@@ -88,12 +94,12 @@ const Schedule = () => {
               </div>
             ))}
           </div>
-        )}{" "}
+        )}
         {day === 2 && (
           <div className="space-y-6 border-l-2 border-dashed">
             {schedule.day2.map((s, id) => (
               <div key={id} className="relative w-full">
-                <div className="absolute  z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
+                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
                 <div className="ml-6 space-y-2">
                   <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
                   <p className="mt-2 max-w-screen-sm text-base text-gray-400">
@@ -126,7 +132,7 @@ const Schedule = () => {
           <div className="space-y-6 border-l-2 border-dashed">
             {schedule.day3.map((s, id) => (
               <div key={id} className="relative w-full">
-                <div className="absolute  z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
+                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
                 <div className="ml-6 space-y-2">
                   <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
                   <p className="mt-2 max-w-screen-sm text-base text-gray-400">
@@ -156,7 +162,7 @@ const Schedule = () => {
           </div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
