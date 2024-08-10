@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import localFont from "next/font/local";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
+
+const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Pricing = () => {
   return (
@@ -15,10 +18,12 @@ const Pricing = () => {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-extrabold text-white sm:text-5xl">
+          <h2
+            className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop`}
+          >
             Pricing Plans
           </h2>
-          <p className="mt-4 text-xl text-gray-400">
+          <p className="mt-4 text-xl text-gray-400 font-mono">
             Choose Your Plan That Fits You Best
           </p>
         </div>

@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { schedule } from "@/utils/data";
 import localFont from "next/font/local";
@@ -26,7 +26,7 @@ const Schedule = () => {
       >
         SCHEDULE
       </h1>
-      <p className="text-lg text-center w-3/4 md:text-xl mt-4 font-mono">
+      <p className="text-lg text-center w-3/4 md:text-xl mt-4 font-mono text-gray-400">
         Stay on Top with Our Event Schedule
       </p>
       <div className="mt-10 flex flex-wrap justify-center">
