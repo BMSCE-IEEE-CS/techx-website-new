@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
-const spacex = localFont({ src: "../app/SpaceX.ttf" });
+const batman = localFont({src: "../app/batmfa__.ttf"});
 
 const Why = () => {
   return (
@@ -20,7 +20,7 @@ const Why = () => {
           viewport={{ once: true }}
         >
           <h1
-            className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop`}
+            className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
           >
             OUTCOMES
           </h1>

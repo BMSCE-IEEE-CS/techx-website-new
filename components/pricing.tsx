@@ -19,11 +19,11 @@ const Pricing = () => {
         >
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-12">
-                    <h2
+                    <h1
                         className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
                     >
                         Pricing
-                    </h2>
+                    </h1>
                     <p className="mt-4 text-xl text-gray-400 font-mono">
                         Choose Your Plan That Fits You Best
                     </p>

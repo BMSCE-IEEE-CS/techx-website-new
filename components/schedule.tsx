@@ -8,7 +8,7 @@ import { MdPerson } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
-
+const batman = localFont({src: "../app/batmfa__.ttf"});
 const Schedule = () => {
   const [day, setDay] = useState(1);
 
@@ -22,7 +22,7 @@ const Schedule = () => {
       viewport={{ once: true }}
     >
       <h1
-        className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop `}
+        className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
       >
         SCHEDULE
       </h1>
@@ -32,31 +32,25 @@ const Schedule = () => {
       <div className="mt-10 flex flex-wrap justify-center">
         <button
           onClick={() => setDay(1)}
-          className={`${
-            spacex.className
-          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
-            day === 1 ? "bg-mOrange text-black" : ""
-          }`}
+          className={`${spacex.className
+            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${day === 1 ? "bg-mOrange text-black" : ""
+            }`}
         >
           Day 1
         </button>
         <button
           onClick={() => setDay(2)}
-          className={`${
-            spacex.className
-          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
-            day === 2 ? "bg-mOrange text-black" : ""
-          }`}
+          className={`${spacex.className
+            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${day === 2 ? "bg-mOrange text-black" : ""
+            }`}
         >
           Day 2
         </button>
         <button
           onClick={() => setDay(3)}
-          className={`${
-            spacex.className
-          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
-            day === 3 ? "bg-mOrange text-black" : ""
-          }`}
+          className={`${spacex.className
+            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${day === 3 ? "bg-mOrange text-black" : ""
+            }`}
         >
           Day 3
         </button>

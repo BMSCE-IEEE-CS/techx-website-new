@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
+const batman = localFont({src: "../app/batmfa__.ttf"});
 
 const Sponsors = () => {
   return (
@@ -23,7 +24,7 @@ const Sponsors = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black to-mOrange opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center">
         <h1
-          className={`${spacex.className} text-4xl md:text-5xl drop-shadow-orangeDrop`}
+          className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
         >
           SPONSORS
         </h1>
