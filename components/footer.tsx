@@ -11,8 +11,8 @@ const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Footer: React.FC = () => {
   const iconStyle = {
-    backgroundColor: "black", // Black background for the circle
-    color: "white", // White color for the icon
+    backgroundColor: "black", 
+    color: "white", 
     borderRadius: "50%",
     padding: "10px",
     fontSize: "24px",
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
     justifyContent: "center",
     width: "50px",
     height: "50px",
-    border: "2px solid white", // White border around the circle
+    border: "2px solid white", 
   };
 
   return (

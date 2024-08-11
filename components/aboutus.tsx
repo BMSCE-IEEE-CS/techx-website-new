@@ -22,14 +22,14 @@ const AboutUs = () => {
         <h1 className="text-3xl md:text-6xl font-bold mt-10 drop-shadow-orangeDrop text-center">
           What is{" "}
           <span className={spacex.className}>
-            TechX<sup className="ml-2 md:ml-7">24</sup>
+            TechX<sup className="ml-2 md:ml-7" style={{fontSize:"26px"}}>24</sup>
           </span>
         </h1>
-        <p className="text-justify mt-6 font-semibold">
+        <p className="text-justify mt-6 font-normal">
           <strong>TechX</strong> is a comprehensive event organized by the IEEE
-          Computer Society&apos;s Student and Young Professionals community.
-          Jointly hosted by BMSCE IEEE Computer Society and Christ University
-          IEEE Computer Society, it offers a platform for students to explore
+          Computer Society Student and Young Professionals community.
+          Jointly hosted by <span style={{fontWeight:"800"}}>BMSCE IEEE Computer Society</span> and <span style={{fontWeight:"800"}}>Christ University
+          IEEE Computer Society</span>, it offers a platform for students to explore
           emerging technologies, enhance soft skills, develop leadership
           abilities, and engage with industry professionals. Aligned with the
           &quot;Tech, Train, Lead, Engage, Unique&quot; motto, TechX aims to
