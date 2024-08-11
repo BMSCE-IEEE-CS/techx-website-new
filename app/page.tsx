@@ -5,7 +5,6 @@ import Events from "@/components/events";
 import Schedule from "@/components/schedule";
 import Sponsors from "@/components/sponsors";
 import Footer from "../components/footer";
-import Pricing from "@/components/pricing";
 
 export default function Home() {
   return (
@@ -15,7 +14,6 @@ export default function Home() {
       <Why />
       {/* <Events /> */}
       <Schedule />
-      <Pricing />
       <Sponsors />
       <Footer />
     </div>

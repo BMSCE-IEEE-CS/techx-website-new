@@ -28,7 +28,6 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-black text-white py-8">
       <div className="container mx-auto px-4">
-        {/* Top Section with Maps */}
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-20">
             <h1 className={`${spacex.className} text-3xl`}>
@@ -44,7 +43,7 @@ const Footer: React.FC = () => {
               interviews.
             </p>
           </div>
-          <div className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-8">
+          <div className="flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8 lg:mt-10">
             <div className="flex-1 text-center lg:text-left flex flex-col items-center lg:items-start">
               <div className="w-full h-48 lg:h-64">
                 <iframe
