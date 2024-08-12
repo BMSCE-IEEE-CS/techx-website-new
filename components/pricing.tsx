@@ -5,7 +5,7 @@ import localFont from "next/font/local";
 import React from "react";
 import { FaCheckCircle } from "react-icons/fa";
 
-const batman = localFont({src: "../app/batmfa__.ttf"});
+const batman = localFont({ src: "../app/batmfa__.ttf" });
 
 const Pricing = () => {
     return (
@@ -29,7 +29,7 @@ const Pricing = () => {
                 </div>
 
                 <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    <div className="bg-gradient-to-br  from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
                         <div className="mb-8">
                             <h3 className="text-2xl font-semibold text-white text-center">
                                 IEEE Computer Society Members
@@ -53,15 +53,17 @@ const Pricing = () => {
                                 <span>lorem</span>
                             </li>
                         </ul>
-                        <a
-                            href="#"
-                            className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
-                        >
-                            Get Ticket
-                        </a>
+                        <div className="mt-auto">
+                            <a
+                                href="#"
+                                className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+                            >
+                                Get Ticket
+                            </a>
+                        </div>
                     </div>
 
-                    <div className="bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
                         <div className="mb-8">
                             <h3 className="text-2xl font-semibold text-white text-center">
                                 IEEE Members
@@ -85,15 +87,17 @@ const Pricing = () => {
                                 <span>lorem</span>
                             </li>
                         </ul>
-                        <a
-                            href="#"
-                            className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
-                        >
-                            Get Ticket
-                        </a>
+                        <div className="mt-auto">
+                            <a
+                                href="#"
+                                className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+                            >
+                                Get Ticket
+                            </a>
+                        </div>
                     </div>
 
-                    <div className="bg-gradient-to-br  from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+                    <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
                         <div className="mb-8">
                             <h3 className="text-2xl font-semibold text-white text-center">
                                 Non-IEEE Members
@@ -117,12 +121,14 @@ const Pricing = () => {
                                 <span>lorem</span>
                             </li>
                         </ul>
-                        <a
-                            href="#"
-                            className="mt-auto block w-full py-3 px-6 text-center rounded-md font-medium bg-black text-white hover:bg-white hover:text-black transition-all duration-500"
-                        >
-                            Get Ticket
-                        </a>
+                        <div className="mt-auto">
+                            <a
+                                href="#"
+                                className="mt-auto block w-full py-3 px-6 text-center rounded-md font-medium bg-black text-white hover:bg-white hover:text-black transition-all duration-500"
+                            >
+                                Get Ticket
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
