@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 import Carousel from "./carousel";
@@ -8,8 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
-const spacex = localFont({ src: "../app/SpaceX.ttf" });
-const batman = localFont({src: "../app/batmfa__.ttf"});
+const batman = localFont({ src: "../app/batmfa__.ttf" });
 
 const Sponsors = () => {
   return (
@@ -26,7 +25,7 @@ const Sponsors = () => {
         <h1
           className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
         >
-          SPONSORS
+          collaborators
         </h1>
       </div>
       <div className="mt-10"></div>

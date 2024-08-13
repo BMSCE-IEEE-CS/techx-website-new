@@ -1,5 +1,6 @@
 import localFont from "next/font/local";
 import Link from "next/link";
+import Image from "next/image";
 import React from "react";
 import Navbar from "./navbar";
 import Timer from "./Timer";
@@ -40,15 +41,15 @@ const Hero = () => {
                 Purchase Ticket
               </Link>
             </div>
-            {/* <div className="flex flex-col md:flex-row mt-10 items-center gap-4">
-                <h1>Event Sponsored By:</h1>
-                <Image
-                  src="/images/syplogo.png"
-                  width={300}
-                  height={300}
-                  alt="syp logo"
-                />
-              </div> */}
+            <div className="flex flex-col md:flex-row mt-10 items-center gap-4">
+              <h1>Event Sponsored By:</h1>
+              <Image
+                src="/images/syplogo.png"
+                width={300}
+                height={300}
+                alt="syp logo"
+              />
+            </div>
           </div>
         </div>
       </div>
