@@ -13,7 +13,7 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-tr from-mOrange via-black to-black opacity-70 z-0"></div>
       <div className="relative z-10 flex flex-col ">
         <Navbar />
-        <div className="relative flex flex-col items-center bg-no-repeat bg-cover select-none cursor-default">
+        <div className="relative flex flex-col items-center bg-no-repeat bg-cover cursor-default">
           <div className="flex flex-col mt-52">
             <div className="text-center mb-10">
               <h2
@@ -28,7 +28,7 @@ const Hero = () => {
               <h1
                 className={`${spacex.className} text-5xl md:text-7xl text-white`}
               >
-                Tech<span>X</span>
+                Tech<span className="text-mOrange">X</span>
               </h1>
             </div>
             <div className="m-10 text-center">
@@ -41,7 +41,7 @@ const Hero = () => {
                 Purchase Ticket
               </Link>
             </div>
-            <div className="flex flex-col md:flex-row mt-10 items-center gap-4">
+            {/* <div className="flex flex-col md:flex-row mt-10 items-center gap-4">
               <h1>Event Sponsored By:</h1>
               <Image
                 src="/images/syplogo.png"
@@ -49,7 +49,7 @@ const Hero = () => {
                 height={300}
                 alt="syp logo"
               />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

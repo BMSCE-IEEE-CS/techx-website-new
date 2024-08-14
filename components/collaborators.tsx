@@ -10,7 +10,7 @@ import localFont from "next/font/local";
 
 const batman = localFont({ src: "../app/batmfa__.ttf" });
 
-const Sponsors = () => {
+const Collaborators = () => {
   return (
     <motion.div
       id="sponsors"
@@ -23,7 +23,7 @@ const Sponsors = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black to-mOrange opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center">
         <h1
-          className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
+          className={`${batman.className} text-2xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
         >
           collaborators
         </h1>
@@ -34,4 +34,4 @@ const Sponsors = () => {
   );
 };
 
-export default Sponsors;
+export default Collaborators;
