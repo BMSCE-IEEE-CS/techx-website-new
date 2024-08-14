@@ -18,11 +18,11 @@ const Carousel = () => {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: 4,
+    slidesToShow: 3,
     autoplay: true,
     centerMode: true,
     arrows: false,
-    dots: true,
+    dots: false,
     autoplaySpeed: 2000,
     vertical: false,
     responsive: [
