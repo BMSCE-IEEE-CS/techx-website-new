@@ -22,7 +22,7 @@ const Carousel = () => {
     autoplay: true,
     centerMode: true,
     arrows: false,
-    dots: false,
+    dots: true,
     autoplaySpeed: 2000,
     vertical: false,
     responsive: [
