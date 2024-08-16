@@ -98,7 +98,7 @@ const Footer: React.FC = () => {
               </h3>
               <div className="flex justify-center w-full mt-2">
                 <a
-                  href="https://linktr.ee/bmsce_ieeecs"
+                  href="https://linktr.ee/ieeecscu"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

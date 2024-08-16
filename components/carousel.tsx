@@ -11,14 +11,14 @@ const Carousel = () => {
     "/resized/bmsce-ieee-cs.png",
     "/resized/Bangalore-Section-Logo.png",
     "/resized/syplogo.png",
-    "/resized/ieee-cs-cu.png",
+    "/images/ieee-cs-cu.png",
   ];
 
   const settings: Settings = {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: 3,
+    slidesToShow: 2.5,
     autoplay: true,
     centerMode: true,
     arrows: false,

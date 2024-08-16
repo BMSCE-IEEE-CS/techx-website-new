@@ -24,12 +24,12 @@ const Hero = () => {
               <Timer />
             </div>
             <div className="mt-10 text-center">
-              <p className="text-3xl text-mOrange font-bold">IEEE CS</p>
               <h1
                 className={`${spacex.className} text-5xl md:text-7xl text-white`}
               >
                 Tech<span className="text-mOrange">X</span>
               </h1>
+              <p className="text-3xl text-mOrange font-bold">Bangalore</p>
             </div>
             <div className="m-10 text-center">
               <Link

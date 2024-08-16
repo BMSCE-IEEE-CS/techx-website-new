@@ -27,6 +27,9 @@ const Collaborators = () => {
         >
           collaborators
         </h1>
+        {/* <p className="mt-4 text-xl text-gray-400 font-mono">
+        Check Who Makes The Event Possible
+          </p> */}
       </div>
       <div className="mt-10"></div>
       <Carousel />
