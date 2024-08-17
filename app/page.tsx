@@ -8,13 +8,15 @@ import Collaborators from "@/components/collaborators";
 import Footer from "../components/footer";
 import Pricing from "../components/pricing";
 import Sponsor from "@/components/sponsor";
+import LearnMore from "../components/learnmore"
 
 export default function Home() {
   return (
     <div className="flex flex-col bg-black">
       <Hero />
-      <AboutUs />
       <Sponsor />
+      <AboutUs />
+      <LearnMore />
       <Why />
       {/* <Events /> */}
       <Schedule />

@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import Navbar from "./navbar";
 import Timer from "./Timer";
-
+import Logo from "../public/images/Tech X Bangalore.png"
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Hero = () => {
@@ -23,13 +23,16 @@ const Hero = () => {
               </h2>
               <Timer />
             </div>
-            <div className="mt-10 text-center">
-              <h1
-                className={`${spacex.className} text-5xl md:text-7xl text-white`}
-              >
-                Tech<span className="text-mOrange">X</span>
-              </h1>
-              <p className="text-3xl text-mOrange font-bold">Bangalore</p>
+            <div className="mt-10 text-center flex justify-center">
+              <div className="relative w-[300px] h-[100px] md:w-[500px] md:h-[150px]">
+                <Image
+                  src={Logo}
+                  alt="TechX Logo"
+                  layout="fill"
+                  objectFit="contain"
+                  priority
+                />
+              </div>
             </div>
             <div className="m-10 text-center">
               <Link
