@@ -11,7 +11,10 @@ const OraganizerPage = () => {
   return (
     <div className="w-full">
       <div className="flex flex-col items-center mx-10">
-        <Link className="flex items-center gap-2 w-full m-4" href="/">
+        <Link
+          className="flex items-center gap-2 w-full m-4 text-xl font-bold"
+          href="/"
+        >
           <FaArrowLeftLong />
           <p>Back</p>
         </Link>
@@ -25,13 +28,13 @@ const OraganizerPage = () => {
         <div className="flex flex-col">
           <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-10">
             <Image
-              className="w-1/2 m-auto"
+              className="w-full md:w-1/2 m-auto mb-4 md:mb-auto"
               src="/images/bmsce-ieee-cs.png"
               width={200}
               height={200}
               alt="bmsce cs"
             />
-            <h1 className="my-auto">
+            <h1 className="my-auto text-justify text-xl">
               The BMSCE IEEE Computer Society is a premier source of information
               and collaboration in computer science and engineering, connecting
               members worldwide. It provides access to international
@@ -42,21 +45,39 @@ const OraganizerPage = () => {
               driving innovation and advancing technology.
             </h1>
           </div>
-          <div className="grid grid-cols-5 my-10">
-            {organizers.bmsce.map((organizer) => (
-              <div key={organizer}>
-                <h1 className="m-4 text-xl text-center font-semibold">
-                  {organizer}
-                </h1>
-              </div>
-            ))}
+          {/* core */}
+          <div className="mt-10">
+            <h1 className="text-4xl font-bold text-center">CORE</h1>
+            <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+              {organizers.bmsce.core.map((name, idx) => (
+                <div key={idx}>
+                  <p className="text-xl font-semibold my-4 text-center">
+                    {name}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* sac */}
+          <div className="mt-4">
+            <h1 className="text-4xl font-bold text-center">SAC</h1>
+            <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+              {organizers.bmsce.sac.map((name, idx) => (
+                <div key={idx}>
+                  <p className="text-xl font-semibold my-4 text-center">
+                    {name}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
         {/* Christ University Section */}
         <div>
           <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-10">
-            <h1 className="my-auto">
+            <h1 className="my-auto text-justify text-xl">
               The IEEE Computer Society Christ University - Bangalore Student
               Branch Chapter is a student chapter of the IEEE Computer Society,
               dedicated to advancing education and research in computer science
@@ -66,25 +87,46 @@ const OraganizerPage = () => {
               leaders with valuable resources and opportunities.
             </h1>
             <Image
-              className="w-1/2 m-auto"
+              className="w-full md:w-1/2 m-auto order-first md:order-none mb-4 md:mb-auto"
               src="/images/ieee-cs-cu.png"
               width={200}
               height={200}
               alt="christ university"
             />
           </div>
-          <div className="grid grid-cols-5 my-10">
-            {organizers.christuni.map((organizer) => (
-              <div key={organizer}>
-                <h1 className="m-4 text-xl text-center font-semibold">
-                  {organizer}
-                </h1>
-              </div>
-            ))}
+          {/* core */}
+          <div className="mt-10">
+            <h1 className="text-4xl font-bold text-center">CORE</h1>
+            <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+              {organizers.bmsce.core.map((name, idx) => (
+                <div key={idx}>
+                  <p className="text-xl font-semibold my-4 text-center">
+                    {name}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* sac */}
+          <div className="mt-4">
+            <h1 className="text-4xl font-bold text-center">SAC</h1>
+            <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+              {organizers.bmsce.sac.map((name, idx) => (
+                <div key={idx}>
+                  <p className="text-xl font-semibold my-4 text-center">
+                    {name}
+                  </p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 
-        <Link className="flex items-center gap-2 w-full m-10" href="/">
+        <Link
+          className="flex items-center gap-2 w-full m-10 text-xl font-bold"
+          href="/"
+        >
           <FaArrowLeftLong />
           <p>Go home</p>
         </Link>
