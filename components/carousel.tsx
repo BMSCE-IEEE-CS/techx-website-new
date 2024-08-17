@@ -11,7 +11,7 @@ const Carousel = () => {
     "/resized/bmsce-ieee-cs.png",
     "/resized/Bangalore-Section-Logo.png",
     "/resized/syplogo.png",
-    "/images/ieee-cs-cu.png",
+    "/resized/ieee-cs-cu.png",
   ];
 
   const settings: Settings = {
