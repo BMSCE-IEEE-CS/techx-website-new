@@ -18,13 +18,11 @@ const OraganizerPage = () => {
           <FaArrowLeftLong />
           <p>Back</p>
         </Link>
-
         <h1
           className={`${batman.className} text-4xl md:text-6xl drop-shadow-orangeDrop text-center w-full`}
         >
           Organizers
         </h1>
-
         {/* BMSCE Section */}
         <div className="flex flex-col w-full mt-10">
           <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
@@ -50,10 +48,9 @@ const OraganizerPage = () => {
               driving innovation and advancing technology.
             </h2>
           </div>
-
           <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-white" />
-
-          <div className="mt-5">
+          <div className="divide-x-2 divide-y-2"></div>
+          <div className="">
             <h1 className="text-4xl font-bold text-center">
               Executive Committee
             </h1>
@@ -70,7 +67,6 @@ const OraganizerPage = () => {
             </div>
           </div>
           <br /> <br />
-
           <div className="mt-4">
             <h2 className="text-4xl font-bold text-center">
               Student Activity Committee Coordinators
@@ -86,8 +82,9 @@ const OraganizerPage = () => {
             </div>
           </div>
         </div>
-        <br />  <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-white" />
-        <div className="flex flex-col w-full mt-20">
+        <br />{" "}
+        <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-white" />
+        <div className="flex flex-col w-full mt-10">
           <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
             Christ University IEEE Computer Society
           </h1>
@@ -111,8 +108,8 @@ const OraganizerPage = () => {
             </h2>
           </div>
           <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-white" />
-          <div className="mt-5">
-          <h1 className="text-4xl font-bold text-center">
+          <div className="">
+            <h1 className="text-4xl font-bold text-center">
               Executive Committee
             </h1>
             <br /> <br />
@@ -141,7 +138,6 @@ const OraganizerPage = () => {
             </div>
           </div>
         </div>
-
         <Link
           className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4 mt-10 rounded-xl"
           href="/"
