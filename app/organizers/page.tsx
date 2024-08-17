@@ -10,16 +10,16 @@ const batman = localFont({ src: "../../app/batmfa__.ttf" });
 const OraganizerPage = () => {
   return (
     <div className="w-full">
-      <div className="flex flex-col items-center mx-10">
+      <div className="flex flex-col items-start mx-6">
         <Link
-          className="flex items-center gap-2 w-full m-4 text-xl font-bold"
+          className="flex items-center gap-2 m-4 text-xl font-bold bg-mOrange px-4 py-2 rounded-xl"
           href="/"
         >
           <FaArrowLeftLong />
           <p>Back</p>
         </Link>
         <h1
-          className={`${batman.className} text-4xl md:text-6xl drop-shadow-orangeDrop`}
+          className={`${batman.className} text-4xl md:text-6xl drop-shadow-orangeDrop text-center w-full`}
         >
           Organizers
         </h1>
@@ -124,11 +124,10 @@ const OraganizerPage = () => {
         </div>
 
         <Link
-          className="flex items-center gap-2 w-full m-10 text-xl font-bold"
+          className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4  mt-10 rounded-xl"
           href="/"
         >
-          <FaArrowLeftLong />
-          <p>Go home</p>
+          Go Home
         </Link>
       </div>
     </div>
