@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import Navbar from "./navbar";
 import Timer from "./Timer";
-import Logo from "../public/images/Tech X Bangalore.png"
+import Logo from "../public/images/Tech X Bangalore Colour White Orange.png"
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Hero = () => {
