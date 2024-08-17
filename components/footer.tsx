@@ -1,5 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
+import Image from 'next/image'
+import Logo from "../public/images/Tech X Bangalore Colour White Orange.png"
 import {
   FaFacebookF,
   FaInstagram,
@@ -30,9 +32,17 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-20">
-            <h1 className={`${spacex.className} text-3xl`}>
-              Tech<span className="text-mOrange">X</span>
-            </h1>
+          <div className="mt-5 text-center flex justify-center">
+              <div className="relative w-[400px] h-[150px] md:w-[350px] md:h-[100px]">
+                <Image
+                  src={Logo}
+                  alt="TechX Logo"
+                  layout="fill"
+                  objectFit="contain"
+                  priority
+                />
+              </div>
+            </div>
             <p className="mt-2 w-90 sm:w-full md:w-90 lg:w-90 xl:w-80 select-none">
               TechX is an IEEE CS event designed for students and young
               professionals. It focuses on new technologies and offers various

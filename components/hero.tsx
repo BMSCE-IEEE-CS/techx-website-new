@@ -23,8 +23,8 @@ const Hero = () => {
               </h2>
               <Timer />
             </div>
-            <div className="mt-10 text-center flex justify-center">
-              <div className="relative w-[300px] h-[100px] md:w-[500px] md:h-[150px]">
+            <div className="mt-5 text-center flex justify-center">
+              <div className="relative w-[400px] h-[150px] md:w-[550px] md:h-[150px]">
                 <Image
                   src={Logo}
                   alt="TechX Logo"

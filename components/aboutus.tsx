@@ -5,7 +5,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
-import Link from "next/link";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
@@ -22,11 +21,9 @@ const AboutUs = () => {
       <div className="card-body">
         <h1 className="text-3xl md:text-6xl font-bold mt-10 text-center">
           What is{" "}
-          <span className={spacex.className}>
-            TechX
-            <div className="ml-2 md:ml-7" style={{ fontSize: "26px" }}>
-              Bangalore
-            </div>
+          <span className={spacex.className}>TechX</span>
+          <span className="block md:inline text-2xl md:text-3xl text-white font-semibold ml-7">
+            Bangalore
           </span>
         </h1>
         <p className="text-justify mt-6 font-normal">
@@ -49,7 +46,7 @@ const AboutUs = () => {
             <span className="mr-3">
               <FaCalendarAlt size={25} />
             </span>
-            13th, 14th and 15th September, 2024
+            20th, 21st, and 22nd September, 2024
           </p>
           <p className="flex items-center">
             <span className="mr-3">
@@ -58,11 +55,8 @@ const AboutUs = () => {
             Bengaluru, India
           </p>
         </div>
-        <div className="flex flex-col items-center">
-      </div>
       </div>
     </motion.div>
-      
   );
 };
 
