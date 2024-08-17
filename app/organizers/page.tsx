@@ -45,30 +45,43 @@ const OraganizerPage = () => {
           <div className="grid grid-cols-5 my-10">
             {organizers.bmsce.map((organizer) => (
               <div key={organizer}>
-                <h1 className="m-4 text-xl text-center">{organizer}</h1>
+                <h1 className="m-4 text-xl text-center font-semibold">
+                  {organizer}
+                </h1>
               </div>
             ))}
           </div>
         </div>
 
         {/* Christ University Section */}
-        <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-10">
-          <h1 className="my-auto">
-            The IEEE Computer Society Christ University - Bangalore Student
-            Branch Chapter is a student chapter of the IEEE Computer Society,
-            dedicated to advancing education and research in computer science
-            and engineering. Its mission includes offering professional
-            development, fostering networking among students, faculty, and
-            industry professionals, and supporting the growth of future leaders
-            with valuable resources and opportunities.
-          </h1>
-          <Image
-            className="w-1/2 m-auto"
-            src="/images/ieee-cs-cu.png"
-            width={200}
-            height={200}
-            alt="christ university"
-          />
+        <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-10">
+            <h1 className="my-auto">
+              The IEEE Computer Society Christ University - Bangalore Student
+              Branch Chapter is a student chapter of the IEEE Computer Society,
+              dedicated to advancing education and research in computer science
+              and engineering. Its mission includes offering professional
+              development, fostering networking among students, faculty, and
+              industry professionals, and supporting the growth of future
+              leaders with valuable resources and opportunities.
+            </h1>
+            <Image
+              className="w-1/2 m-auto"
+              src="/images/ieee-cs-cu.png"
+              width={200}
+              height={200}
+              alt="christ university"
+            />
+          </div>
+          <div className="grid grid-cols-5 my-10">
+            {organizers.christuni.map((organizer) => (
+              <div key={organizer}>
+                <h1 className="m-4 text-xl text-center font-semibold">
+                  {organizer}
+                </h1>
+              </div>
+            ))}
+          </div>
         </div>
 
         <Link className="flex items-center gap-2 w-full m-10" href="/">
