@@ -30,6 +30,7 @@ const OraganizerPage = () => {
           <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
             BMSCE IEEE Computer Society
           </h1>
+          <br />
           <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto mb-4 md:mb-auto"
@@ -90,6 +91,7 @@ const OraganizerPage = () => {
           <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
             Christ University IEEE Computer Society
           </h1>
+          <br />
           <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto order-first md:order-none mb-4 md:mb-auto"
