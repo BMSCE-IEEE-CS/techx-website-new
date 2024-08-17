@@ -18,6 +18,7 @@ const OraganizerPage = () => {
           <FaArrowLeftLong />
           <p>Back</p>
         </Link>
+
         <h1
           className={`${batman.className} text-4xl md:text-6xl drop-shadow-orangeDrop text-center w-full`}
         >
@@ -25,8 +26,11 @@ const OraganizerPage = () => {
         </h1>
 
         {/* BMSCE Section */}
-        <div className="flex flex-col">
-          <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-10">
+        <div className="flex flex-col w-full mt-10">
+          <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
+            BMSCE IEEE Computer Society
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto mb-4 md:mb-auto"
               src="/images/bmsce-ieee-cs.png"
@@ -34,7 +38,7 @@ const OraganizerPage = () => {
               height={200}
               alt="bmsce cs"
             />
-            <h1 className="my-auto text-justify text-xl">
+            <h2 className="my-auto text-justify text-xl">
               The BMSCE IEEE Computer Society is a premier source of information
               and collaboration in computer science and engineering, connecting
               members worldwide. It provides access to international
@@ -43,11 +47,17 @@ const OraganizerPage = () => {
               collaboration among engineers, scientists, and industry
               professionals through workshops, hackathons, and codeathons,
               driving innovation and advancing technology.
-            </h1>
+            </h2>
           </div>
-          {/* core */}
-          <div className="mt-10">
-            <h1 className="text-4xl font-bold text-center">CORE</h1>
+
+          <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-white" />
+
+          <div className="mt-5">
+            <h1 className="text-4xl font-bold text-center">
+              Executive Committee
+            </h1>
+            <br /> <br />
+            <h2 className="text-4xl font-bold text-center">CORE</h2>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
               {organizers.bmsce.core.map((name, idx) => (
                 <div key={idx}>
@@ -58,10 +68,12 @@ const OraganizerPage = () => {
               ))}
             </div>
           </div>
+          <br /> <br />
 
-          {/* sac */}
           <div className="mt-4">
-            <h1 className="text-4xl font-bold text-center">SAC</h1>
+            <h2 className="text-4xl font-bold text-center">
+              Student Activity Committee Coordinators
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
               {organizers.bmsce.sac.map((name, idx) => (
                 <div key={idx}>
@@ -73,19 +85,12 @@ const OraganizerPage = () => {
             </div>
           </div>
         </div>
-
-        {/* Christ University Section */}
-        <div>
-          <div className="grid grid-cols-1 md:grid-cols-2 w-full mt-10">
-            <h1 className="my-auto text-justify text-xl">
-              The IEEE Computer Society Christ University - Bangalore Student
-              Branch Chapter is a student chapter of the IEEE Computer Society,
-              dedicated to advancing education and research in computer science
-              and engineering. Its mission includes offering professional
-              development, fostering networking among students, faculty, and
-              industry professionals, and supporting the growth of future
-              leaders with valuable resources and opportunities.
-            </h1>
+        <br />  <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-white" />
+        <div className="flex flex-col w-full mt-20">
+          <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
+            Christ University IEEE Computer Society
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto order-first md:order-none mb-4 md:mb-auto"
               src="/images/ieee-cs-cu.png"
@@ -93,9 +98,22 @@ const OraganizerPage = () => {
               height={200}
               alt="christ university"
             />
+            <h2 className="my-auto text-justify text-xl">
+              The IEEE Computer Society Christ University - Bangalore Student
+              Branch Chapter is a student chapter of the IEEE Computer Society,
+              dedicated to advancing education and research in computer science
+              and engineering. Its mission includes offering professional
+              development, fostering networking among students, faculty, and
+              industry professionals, and supporting the growth of future
+              leaders with valuable resources and opportunities.
+            </h2>
           </div>
-          {/* core */}
-          <div className="mt-10">
+          <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-white" />
+          <div className="mt-5">
+          <h1 className="text-4xl font-bold text-center">
+              Executive Committee
+            </h1>
+            <br /> <br />
             <h1 className="text-4xl font-bold text-center">CORE</h1>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
               {organizers.bmsce.core.map((name, idx) => (
@@ -108,7 +126,6 @@ const OraganizerPage = () => {
             </div>
           </div>
 
-          {/* sac */}
           <div className="mt-4">
             <h1 className="text-4xl font-bold text-center">SAC</h1>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
@@ -124,7 +141,7 @@ const OraganizerPage = () => {
         </div>
 
         <Link
-          className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4  mt-10 rounded-xl"
+          className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4 mt-10 rounded-xl"
           href="/"
         >
           Go Home
