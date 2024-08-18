@@ -1,106 +1,210 @@
 export const schedule = {
   day0: [
     {
-      name: "Event 1",
+      name: "Workshop on DevOps (Offline)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "The workshop on DevOps provides an in-depth understanding of the principles and practices that unite software development and IT operations. It covers automation, continuous integration, and deployment strategies for optimising workflow efficiency and ensuring rapid, reliable software delivery.",
       rp: "Resource Person 1",
-      time: "9:00 AM - 10:00 AM",
-      location: "Venue 1",
+      time: "10:00 AM - 04:00 PM (09/09/24)",
+      location: "CHRIST (Deemed to be University), Kengeri Campus",
     },
     {
-      name: "Event 2",
+      name: "Technical Talk on Generative AI (Hybrid)",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "The Tech Talk on Generative AI delves into the advancements and applications of AI models that can create new content, from text and images to music and code. It explores the underlying technologies, ethical considerations, and potential impact of generative AI across various industries.",
       rp: "Resource Person 2",
-      time: "10:00 AM - 11:00 AM",
-      location: "Venue 2",
-    },
-    {
-      name: "Event 3",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
-      rp: "Resource Person 3",
-      time: "11:00 AM - 12:00 PM",
-      location: "Venue 3",
+      time: "10:00 AM - 12:30 PM (18/09/24)",
+      location: "CHRIST (Deemed to be University), Kengeri Campus",
     },
   ],
   day1: [
     {
-      name: "Event 1",
+      name: "Registration",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "",
       rp: "Resource Person 1",
-      time: "9:00 AM - 10:00 AM",
-      location: "Venue 1",
+      time: "8:45 AM - 9:45 AM",
+      location: "BMS College of Engineering",
     },
     {
-      name: "Event 2",
+      name: "Inauguration",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "",
       rp: "Resource Person 2",
-      time: "10:00 AM - 11:00 AM",
-      location: "Venue 2",
+      time: "10:00 AM - 10:30 AM",
+      location: "BMS College of Engineering",
     },
     {
-      name: "Event 3",
+      name: "Idea to IPO Talk",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "Participants can expect an interactive and insightful exploration of the essential non-technical skills required to navigate a tech startup's journey successfully. The session will cover critical topics such as effective communication, leadership, team building, and networking. Attendees will learn to articulate their vision, pitch to investors, manage and motivate diverse teams, and build strategic partnerships.",
       rp: "Resource Person 3",
-      time: "11:00 AM - 12:00 PM",
-      location: "Venue 3",
+      time: "10:30 AM - 11:30 AM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Soft Skill Interactive Session and Icebreaking",
+      description:
+        "",
+      rp: "Resource Person 4",
+      time: "11:30 AM - 12:45 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Lunch Break",
+      description:
+        "",
+      rp: "Resource Person 5",
+      time: "12:45 PM - 2:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Workshop on Drone Technology (Applications of Computer Science)",
+      description:
+        "This workshop covers drone mechanics, flight principles, and operational safety. Participants will engage in practical sessions to master aerial navigation and aerial photography and explore the regulatory landscape, equipping them to harness drones effectively in various applications.",
+      rp: "Resource Person 6",
+      time: "2:00 PM - 4:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Leadership Bootcamp",
+      description:
+        "Topics covered will include communication, conflict resolution, emotional intelligence, and strategic planning. This boot camp is ideal for current and aspiring leaders looking to elevate their leadership potential and drive organisational success.",
+      rp: "Resource Person 7",
+      time: "4:00 PM - 5:00 PM",
+      location: "BMS College of Engineering",
     },
   ],
   day2: [
     {
-      name: "Event 4",
+      name: "Campus to Career - Insight into the Tech World",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "This event is a comprehensive session designed to guide freshers as they transition into the tech industry. The event begins with an industry overview, followed by expert-led discussions on key skills, resume building, and interview strategies. Participants will engage in interactive Q&A sessions and receive practical tips for success in their first job. The event wraps up with a networking opportunity, allowing attendees to connect with professionals and peers.",
       rp: "Resource Person 4",
       time: "9:00 AM - 10:00 AM",
-      location: "Venue 4",
+      location: "BMS College of Engineering",
     },
     {
-      name: "Event 5",
+      name: "Cybersecurity 360",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "An enriching talk by a seasoned cybersecurity professional covering various topics. Participants will gain insights into the latest security practices, the importance of a proactive defence approach, and how to safeguard both personal and organizational digital assets in an increasingly interconnected world.",
       rp: "Resource Person 5",
-      time: "10:00 AM - 11:00 AM",
-      location: "Venue 5",
+      time: "10:00 AM - 1:00 PM",
+      location: "BMS College of Engineering",
     },
     {
-      name: "Event 6",
+      name: "Interactive Lunch Break",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "",
       rp: "Resource Person 6",
-      time: "11:00 AM - 12:00 PM",
-      location: "Venue 6",
+      time: "1:00 PM - 2:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Smart City Ideathon",
+      description:
+        "The Smart City Ideathon seeks computer science solutions for urban challenges, focusing on sustainability. It included simulated scenarios, and ideas are judged on innovation, feasibility, impact, scalability, and sustainability. The ideathon will also have a prize pool of ₹ 5,000.",
+      rp: "Resource Person 6",
+      time: "2:00 PM - 5:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Lalbagh Evening Stroll",
+      description:
+        "A recreational evening walk in the internationally renowned centre for botanical artwork and for the conservation of plants. Lalbagh is one of the most scenic gardens in the state.",
+      rp: "Resource Person 6",
+      time: "Evening",
+      location: "BMS College of Engineering",
     },
   ],
   day3: [
     {
-      name: "Event 7",
+      name: "Breakfast",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
+        "",
+      rp: "Resource Person 7",
+      time: "8:00 AM - 9:00 AM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Keynote Talk on Edge Computing",
+      description:
+        "This talk explores the benefits of edge computing, such as reduced latency, improved security, and enhanced real-time data processing. Attendees get to delve into how it revolutionises industries like IoT and autonomous vehicles and discover the latest advancements and future trends.",
       rp: "Resource Person 7",
       time: "9:00 AM - 10:00 AM",
-      location: "Venue 7",
+      location: "BMS College of Engineering",
     },
     {
-      name: "Event 8",
+      name: "Talk on 5G Technology",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
-      rp: "Resource Person 8",
-      time: "10:00 AM - 11:00 AM",
-      location: "Venue 8",
+        "This keynote will explore the revolutionary impact of 5G technology on global connectivity, highlighting its role in enabling ultra-fast data speeds, smart cities, and the Internet of Things. The speaker will discuss the challenges and opportunities 5G presents across various industries. Attendees will gain insights into how 5G is set to transform our digital landscape.",
+      rp: "Resource Person 7",
+      time: "10:00 AM - 10:30 AM",
+      location: "BMS College of Engineering",
     },
     {
-      name: "Event 9",
+      name: "Designing Minds",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ut eleifend felis. Nam tincidunt quam vel dolor viverra consectetur. Fusce.",
-      rp: "Resource Person 9",
-      time: "11:00 AM - 12:00 PM",
-      location: "Venue 9",
+        "This workshop delves into UI/UX principles, focusing on how visual elements influence user behaviour and perception. Learn how to craft intuitive, visually appealing designs that resonate with users on a psychological level. Through expert-led sessions and practical exercises, you'll gain the tools to create experiences that are not only functional but also deeply engaging.",
+      rp: "Resource Person 7",
+      time: "10:45 AM - 1:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Nano Mentoring Session",
+      description:
+        "The primary goal of Nano Mentoring is to facilitate meaningful interactions between experienced professionals and aspiring individuals in a short duration, fostering learning, guidance, and networking.",
+      rp: "Resource Person 7",
+      time: "10:45 AM - 1:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Lunch Break",
+      description:
+        "",
+      rp: "Resource Person 7",
+      time: "1:00 PM - 2:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Panel Discussion on Emerging Technology & Sustainability",
+      description:
+        "The panel explores innovative teaching methods, the importance of sustainability projects, and inspiring future engineers to prioritise eco-friendly practices to address environmental challenges through technology.",
+      rp: "Resource Person 7",
+      time: "2:00 PM - 3:30 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Benefits of IEEE CS Membership",
+      description:
+        "Participants discover the benefits of joining the IEEE Computer Society: access to research, professional development, networking, industry insights, and a global computing community to enhance their careers.",
+      rp: "Resource Person 7",
+      time: "3:30 PM - 4:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Break (with Treasure Hunt)",
+      description:
+        "A small, refreshing break before the closing ceremony, combined with a surprise treasure hunt on the college campus, will make TechX Bangalore a memorable experience for the attendees.",
+      rp: "Resource Person 7",
+      time: "4:00 PM - 4:30 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "Cultural Evening and Closing Ceremony",
+      description:
+        "",
+      rp: "Resource Person 7",
+      time: "4:30 PM - 6:00 PM",
+      location: "BMS College of Engineering",
+    },
+    {
+      name: "High Tea",
+      description:
+        "",
+      rp: "Resource Person 7",
+      time: "6:00 PM onwards",
+      location: "BMS College of Engineering",
     },
   ],
 };
@@ -167,21 +271,26 @@ export const organizers = {
       "Vageesh G. N.",
     ],
   },
-  christuni: [
-    "Aneesh",
-    "Dheemanth",
-    "Manjari",
-    "Prajwal",
-    "Sanjana",
-    "Sneha",
-    "Tulasikrishna",
-    "Anushree",
-    "Nandan",
-    "Pranati",
-    "Pranav",
-    "Rishika",
-    "Sahithi",
-    "Tanisha",
-    "Vageesh",
-  ],
+  christuni: {
+    core: [
+      "Augadh Verma",
+      "Aaron Probha",
+      "Kevin Johnson",
+      "B Satyam Rao",
+      "Ashley Varghese",
+      "Pranshu Patel",
+      "Arnav Rangwani",
+      "Labh Bothra",
+    ],
+    sac: [
+      "Anushree Shetty",
+      "Nandan M. N.",
+      "Pranati A. P.",
+      "Pranav Kiran Kumar Rao",
+      "Rishika Nayana Shakthi",
+      "Sahithi Bollempalli",
+      "Tanisha Prakash",
+      "Vageesh G. N.",
+    ],
+  }
 };

@@ -115,7 +115,7 @@ const OraganizerPage = () => {
             <br /> <br />
             <h1 className="text-4xl font-bold text-center">CORE</h1>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
-              {organizers.bmsce.core.map((name, idx) => (
+              {organizers.christuni.core.map((name, idx) => (
                 <div key={idx}>
                   <p className="text-xl font-semibold my-4 text-center">
                     {name}
@@ -125,10 +125,10 @@ const OraganizerPage = () => {
             </div>
           </div>
 
-          <div className="mt-4">
-            <h1 className="text-4xl font-bold text-center">SAC</h1>
+          {/* <div className="mt-4">
+            <h1 className="text-4xl font-bold text-center">Student Activity Committee Coordinators</h1>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
-              {organizers.bmsce.sac.map((name, idx) => (
+              {organizers.christuni.sac.map((name, idx) => (
                 <div key={idx}>
                   <p className="text-xl font-semibold my-4 text-center">
                     {name}
@@ -136,7 +136,7 @@ const OraganizerPage = () => {
                 </div>
               ))}
             </div>
-          </div>
+          </div> */}
         </div>
         <Link
           className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4 mt-10 rounded-xl"
