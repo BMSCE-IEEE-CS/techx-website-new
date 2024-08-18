@@ -20,16 +20,14 @@ export const schedule = {
   day1: [
     {
       name: "Registration",
-      description:
-        "",
-      rp: "Resource Person 1",
+      description: "",
+      rp: "",
       time: "8:45 AM - 9:45 AM",
       location: "BMS College of Engineering",
     },
     {
       name: "Inauguration",
-      description:
-        "",
+      description: "",
       rp: "Resource Person 2",
       time: "10:00 AM - 10:30 AM",
       location: "BMS College of Engineering",
@@ -44,17 +42,15 @@ export const schedule = {
     },
     {
       name: "Soft Skill Interactive Session and Icebreaking",
-      description:
-        "",
+      description: "",
       rp: "Resource Person 4",
       time: "11:30 AM - 12:45 PM",
       location: "BMS College of Engineering",
     },
     {
       name: "Lunch Break",
-      description:
-        "",
-      rp: "Resource Person 5",
+      description: "",
+      rp: "",
       time: "12:45 PM - 2:00 PM",
       location: "BMS College of Engineering",
     },
@@ -94,9 +90,8 @@ export const schedule = {
     },
     {
       name: "Interactive Lunch Break",
-      description:
-        "",
-      rp: "Resource Person 6",
+      description: "",
+      rp: "",
       time: "1:00 PM - 2:00 PM",
       location: "BMS College of Engineering",
     },
@@ -120,9 +115,8 @@ export const schedule = {
   day3: [
     {
       name: "Breakfast",
-      description:
-        "",
-      rp: "Resource Person 7",
+      description: "",
+      rp: "",
       time: "8:00 AM - 9:00 AM",
       location: "BMS College of Engineering",
     },
@@ -160,9 +154,8 @@ export const schedule = {
     },
     {
       name: "Lunch Break",
-      description:
-        "",
-      rp: "Resource Person 7",
+      description: "",
+      rp: "",
       time: "1:00 PM - 2:00 PM",
       location: "BMS College of Engineering",
     },
@@ -192,17 +185,15 @@ export const schedule = {
     },
     {
       name: "Cultural Evening and Closing Ceremony",
-      description:
-        "",
-      rp: "Resource Person 7",
+      description: "",
+      rp: "",
       time: "4:30 PM - 6:00 PM",
       location: "BMS College of Engineering",
     },
     {
       name: "High Tea",
-      description:
-        "",
-      rp: "Resource Person 7",
+      description: "",
+      rp: "",
       time: "6:00 PM onwards",
       location: "BMS College of Engineering",
     },
@@ -292,5 +283,5 @@ export const organizers = {
       "Tanisha Prakash",
       "Vageesh G. N.",
     ],
-  }
+  },
 };

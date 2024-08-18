@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import localFont from "next/font/local";
 import Link from "next/link";
@@ -12,22 +12,22 @@ const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
 
 const Hero = () => {
   const fullText = "COMING SOON!";
-  const [displayedText, setDisplayedText] = useState(""); 
+  const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
   useEffect(() => {
     let currentIndex = 0;
     const typingInterval = setInterval(() => {
       if (currentIndex <= fullText.length) {
-        setDisplayedText((prev) => fullText.slice(0, currentIndex + 1)); 
+        setDisplayedText((prev) => fullText.slice(0, currentIndex + 1));
         currentIndex += 1;
       } else {
         clearInterval(typingInterval);
         setTimeout(() => setIsTypingComplete(true), 500);
       }
-    }, 200); 
+    }, 200);
 
-    return () => clearInterval(typingInterval); 
+    return () => clearInterval(typingInterval);
   }, []);
 
   return (
@@ -43,11 +43,9 @@ const Hero = () => {
               >
                 {displayedText}
                 {!isTypingComplete && (
-                  <span
-                  className="text-mOrange inline-block ml-1 animate-blink text-3xl md:text-4xl font-bold"
-                >
-                  |
-                </span>                
+                  <span className="text-mOrange inline-block ml-1 animate-blink text-3xl md:text-4xl font-bold">
+                    |
+                  </span>
                 )}
               </h2>
               <Timer />
