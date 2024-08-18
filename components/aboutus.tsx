@@ -21,7 +21,8 @@ const AboutUs = () => {
     >
       <div className="card-body">
         <h1 className="text-4xl md:text-6xl font-semibold text-center">
-          What is <span className={spacex.className}>TechX</span> Bangalore
+          What is <span className={spacex.className}>TechX</span>{" "}
+          <span className="text-2xl md:text-4xl">Bangalore</span>
         </h1>
         <p className="text-justify mt-6 font-normal">
           <strong>TechX</strong> is a comprehensive event organized by the IEEE
