@@ -16,7 +16,7 @@ const Pricing = () => {
       transition={{ duration: 1.2 }}
       viewport={{ once: true }}
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1
             className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
@@ -34,7 +34,9 @@ const Pricing = () => {
               <h3 className="text-2xl font-bold text-white text-center">
                 IEEE Computer Society Members
               </h3>
-              <p className="mt-4 text-black text-[1.2rem] font-bold">3 Day Pass</p>
+              <p className="mt-4 text-black text-[1.2rem] font-bold">
+                3 Day Pass
+              </p>
             </div>
             <div className="mb-8">
               <span className="text-5xl font-extrabold text-white">
@@ -74,14 +76,16 @@ const Pricing = () => {
           </div>
 
           <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
-              <div className="mb-8">
+            <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
                 IEEE Members
               </h3>
             </div>
             <div className="flex flex-col flex-grow justify-end">
               <div className="mb-8">
-                <p className="mt-4 text-black text-[1.2rem] font-bold text-left">3 Day Pass</p>
+                <p className="mt-4 text-black text-[1.2rem] font-bold text-left">
+                  3 Day Pass
+                </p>
               </div>
               <div className="mb-8 text-left">
                 <span className="text-5xl font-extrabold text-white">
@@ -121,7 +125,6 @@ const Pricing = () => {
             </div>
           </div>
 
-
           <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
@@ -130,7 +133,9 @@ const Pricing = () => {
             </div>
             <div className="flex flex-col flex-grow justify-end">
               <div className="mb-8">
-                <p className="mt-4 text-black text-[1.2rem] font-bold">3 Day Pass</p>
+                <p className="mt-4 text-black text-[1.2rem] font-bold">
+                  3 Day Pass
+                </p>
               </div>
               <div className="mb-8">
                 <span className="text-5xl font-extrabold text-white">
@@ -169,7 +174,6 @@ const Pricing = () => {
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </motion.div>
