@@ -176,7 +176,7 @@ export const schedule = {
       location: "BMS College of Engineering",
     },
     {
-      name: "Break (with Treasure Hunt)",
+      name: "Break (With Treasure Hunt)",
       description:
         "A small, refreshing break before the closing ceremony, combined with a surprise treasure hunt on the college campus, will make TechX Bangalore a memorable experience for the attendees.",
       rp: "Resource Person 7",

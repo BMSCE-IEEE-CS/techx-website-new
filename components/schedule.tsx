@@ -3,15 +3,21 @@
 import { schedule } from "@/utils/data";
 import localFont from "next/font/local";
 import React, { useState } from "react";
-import { FaLocationDot, FaRegClock } from "react-icons/fa6";
+import { FaRegClock } from "react-icons/fa6";
 import { MdPerson } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const batman = localFont({ src: "../app/batmfa__.ttf" });
 
+type ScheduleDay = "day0" | "day1" | "day2" | "day3";
+
 const Schedule = () => {
-  const [day, setDay] = useState(0);
+  const [day, setDay] = useState<number>(0);
+
+  const getScheduleDay = (day: number): ScheduleDay => {
+    return `day${day}` as ScheduleDay;
+  };
 
   return (
     <motion.div
@@ -77,15 +83,15 @@ const Schedule = () => {
         </div>
       </div>
 
-      <h1 className="text-xl md:text-2xl text-center">
-        <span className="text-mOrange mr-2 font-bold">Venue:</span>
-        {day === 0
-          ? "Christ (Deemed to be University), Kengeri Campus"
-          : "B. M. S. College Of Engineering"}
-      </h1>
+      <div className="w-full max-w-4xl mx-auto px-4 mt-8">
+        <h1 className="text-xl md:text-2xl text-center">
+          <span className="text-mOrange mr-2 font-bold">Venue:</span>
+          {day === 0
+            ? "Christ (Deemed to be University), Kengeri Campus"
+            : "B. M. S. College Of Engineering"}
+        </h1>
 
-      <div>
-        <h1 className="text-xl md:text-2xl text-center mb-[10%]">
+        <h1 className="text-xl md:text-2xl text-center mt-4 mb-8">
           <span className="text-mOrange mr-2 font-bold">Date:</span>
           {day === 0
             ? "August 9th, 2024 and August 18th, 2024"
@@ -95,125 +101,34 @@ const Schedule = () => {
             ? "August 21st, 2024"
             : "August 22nd, 2024"}
         </h1>
-      </div>
 
-      <div className="w-3/4 md:w-max mx-auto">
-        {day === 0 && (
-          <div className="space-y-6 border-l-2 mx-auto border-dashed">
-            {schedule.day0.map((s, id) => (
-              <div key={id} className="relative w-full">
-                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
-                <div className="ml-6 space-y-2">
-                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
-                  <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
-                    {s.description}
-                  </p>
-                  {s.rp && (
-                    <div className="flex items-center gap-2">
-                      <MdPerson size={20} />
-                      <p className="mt-1 block text-sm font-semibold text-white">
-                        {s.rp}
-                      </p>
-                    </div>
-                  )}
+        <div className="space-y-6 border-l-2 mx-auto border-dashed">
+          {schedule[getScheduleDay(day)].map((s, id) => (
+            <div key={id} className="relative w-full">
+              <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
+              <div className="ml-6 space-y-2">
+                <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
+                <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
+                  {s.description}
+                </p>
+                {s.rp && (
                   <div className="flex items-center gap-2">
-                    <FaRegClock size={20} />
+                    <MdPerson size={20} />
                     <p className="mt-1 block text-sm font-semibold text-white">
-                      {s.time}
+                      {s.rp}
                     </p>
                   </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-        {day === 1 && (
-          <div className="space-y-6 border-l-2 mx-auto border-dashed">
-            {schedule.day1.map((s, id) => (
-              <div key={id} className="relative w-full">
-                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
-                <div className="ml-6 space-y-2">
-                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
-                  <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
-                    {s.description}
+                )}
+                <div className="flex items-center gap-2">
+                  <FaRegClock size={20} />
+                  <p className="mt-1 block text-sm font-semibold text-white">
+                    {s.time}
                   </p>
-                  {s.rp && (
-                    <div className="flex items-center gap-2">
-                      <MdPerson size={20} />
-                      <p className="mt-1 block text-sm font-semibold text-white">
-                        {s.rp}
-                      </p>
-                    </div>
-                  )}
-                  <div className="flex items-center gap-2">
-                    <FaRegClock size={20} />
-                    <p className="mt-1 block text-sm font-semibold text-white">
-                      {s.time}
-                    </p>
-                  </div>
                 </div>
               </div>
-            ))}
-          </div>
-        )}
-        {day === 2 && (
-          <div className="space-y-6 border-l-2 border-dashed">
-            {schedule.day2.map((s, id) => (
-              <div key={id} className="relative w-full">
-                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
-                <div className="ml-6 space-y-2">
-                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
-                  <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
-                    {s.description}
-                  </p>
-                  {s.rp && (
-                    <div className="flex items-center gap-2">
-                      <MdPerson size={20} />
-                      <p className="mt-1 block text-sm font-semibold text-white">
-                        {s.rp}
-                      </p>
-                    </div>
-                  )}
-                  <div className="flex items-center gap-2">
-                    <FaRegClock size={20} />
-                    <p className="mt-1 block text-sm font-semibold text-white">
-                      {s.time}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-        {day === 3 && (
-          <div className="space-y-6 border-l-2 border-dashed">
-            {schedule.day3.map((s, id) => (
-              <div key={id} className="relative w-full">
-                <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
-                <div className="ml-6 space-y-2">
-                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
-                  <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-200/50">
-                    {s.description}
-                  </p>
-                  {s.rp && (
-                    <div className="flex items-center gap-2">
-                      <MdPerson size={20} />
-                      <p className="mt-1 block text-sm font-semibold text-white">
-                        {s.rp}
-                      </p>
-                    </div>
-                  )}
-                  <div className="flex items-center gap-2">
-                    <FaRegClock size={20} />
-                    <p className="mt-1 block text-sm font-semibold text-white">
-                      {s.time}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
+            </div>
+          ))}
+        </div>
       </div>
     </motion.div>
   );

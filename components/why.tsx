@@ -27,21 +27,20 @@ const Why = () => {
           <div className="flex flex-col md:flex-row gap-20 items-center mt-10 max-w-screen-xl mx-10">
             <Image
               className="w-3/4"
-              src="/images/aboutimg.jpg"
+              src="/images/why-alt.jpg"
               width={200}
               height={200}
               alt="about image"
             />
             <ul className="mt-5 text-xl list-image-[url(/images/arrow.png)] list-outside">
               <li>
-                Captivating technical sessions. Hands-on workshops with experts.
+                Captivating technical sessions. Hands-on workshops with experts
               </li>
               <li>
-                Insights from successful Professionals in different domains.
+                Insights from successful Professionals in different domains
               </li>
-              <li>Win prizes, foster camaraderie.</li>
-              <li>Interactive Personality Workshop.</li>
-              <li>Mind-bending entertainment with Mentalist.</li>
+              <li>Win prizes, foster camaraderie</li>
+              <li>Interactive Mentoring Sessions</li>
             </ul>
           </div>
         </motion.div>
