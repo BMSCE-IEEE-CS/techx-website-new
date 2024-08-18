@@ -1,7 +1,7 @@
 "use client";
-
 import Image from "next/image";
 import Slider, { Settings } from "react-slick";
+import React from "react";
 
 const Carousel = () => {
   const images = [
@@ -29,31 +29,51 @@ const Carousel = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3,
           slidesToScroll: 1,
+          centerMode: false,
         },
       },
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
     ],
   };
+
   return (
-    <div className="w-full md:w-5/6 mx-auto px-2 my-10 md:px-10">
-      <Slider {...settings} className="w-full mx-auto my-auto">
+    <div className="w-full px-2 md:px-10">
+      <style jsx global>{`
+        .slick-slider {
+          margin-bottom: 0;
+        }
+        .slick-dots {
+          bottom: -25px;
+        }
+        @media (max-width: 768px) {
+          .slick-slide {
+            margin-bottom: 0;
+          }
+          .slick-dots {
+            bottom: -15px;
+          }
+        }
+      `}</style>
+      <Slider {...settings} className="w-full">
         {images.map((imagePath, index) => (
-          <div key={index}>
-            <Image
-              className="m-10 my-auto"
-              src={imagePath}
-              alt="image"
-              width={256}
-              height={500}
-            />
+          <div key={index} className="px-2">
+            <div className="flex items-center justify-center h-32 md:h-40">
+              <Image
+                src={imagePath}
+                alt="image"
+                width={100}
+                height={100}
+                objectFit="contain"
+              />
+            </div>
           </div>
         ))}
       </Slider>

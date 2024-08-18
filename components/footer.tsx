@@ -33,7 +33,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-20">
           <div className="mt-5 text-center flex justify-center">
-              <div className="relative w-[300px] h-[150px] md:w-[350px] md:h-[100px]">
+              <div className="relative w-[300px] h-[150px] p-0 md:w-[350px] md:h-[100px]">
                 <Image
                   src={Logo}
                   alt="TechX Logo"

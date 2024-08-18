@@ -20,10 +20,12 @@ const AboutUs = () => {
     >
       <div className="card-body">
         <h1 className="text-3xl md:text-6xl font-bold mt-10 text-center">
-          What is{" "}
-          <span className={spacex.className}>TechX</span>
-          <span className="block md:inline text-2xl md:text-3xl text-white font-semibold ml-7">
-            Bangalore
+          <span className="inline-flex items-center flex-wrap justify-center">
+            What is{" "}
+            <span className={`${spacex.className} mx-2`}>TechX</span>
+            <span className="text-2xl md:text-3xl text-white font-semibold">
+              Bangalore
+            </span>
           </span>
         </h1>
         <p className="text-justify mt-6 font-normal">
