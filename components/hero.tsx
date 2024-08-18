@@ -4,7 +4,7 @@ import Image from "next/image";
 import React from "react";
 import Navbar from "./navbar";
 import Timer from "./Timer";
-import Logo from "../public/images/Tech X Bangalore Colour White Orange.png"
+import Logo from "../public/images/Tech X Bangalore Colour White Orange.png";
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
 
@@ -26,13 +26,7 @@ const Hero = () => {
             </div>
             <div className="mt-5 text-center flex justify-center">
               <div className="relative w-[400px] h-[150px] md:w-[550px] md:h-[150px]">
-                <Image
-                  src={Logo}
-                  alt="TechX Logo"
-                  layout="fill"
-                  objectFit="contain"
-                  priority
-                />
+                <Image src={Logo} alt="TechX Logo" />
               </div>
             </div>
             <div className="m-10 text-center">

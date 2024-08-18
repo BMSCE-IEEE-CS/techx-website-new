@@ -18,7 +18,7 @@ const Carousel = () => {
     infinite: true,
     speed: 500,
     slidesToScroll: 1,
-    slidesToShow: 3,
+    slidesToShow: 4,
     autoplay: true,
     centerMode: true,
     arrows: false,
@@ -29,7 +29,7 @@ const Carousel = () => {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 1,
           slidesToScroll: 1,
           centerMode: false,
         },
@@ -37,7 +37,7 @@ const Carousel = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
@@ -45,34 +45,12 @@ const Carousel = () => {
   };
 
   return (
-    <div className="w-full px-2 md:px-10">
-      <style jsx global>{`
-        .slick-slider {
-          margin-bottom: 0;
-        }
-        .slick-dots {
-          bottom: -25px;
-        }
-        @media (max-width: 768px) {
-          .slick-slide {
-            margin-bottom: 0;
-          }
-          .slick-dots {
-            bottom: -15px;
-          }
-        }
-      `}</style>
+    <div className="w-full mx-auto px-2 md:px-10 my-10">
       <Slider {...settings} className="w-full">
         {images.map((imagePath, index) => (
           <div key={index} className="px-2">
-            <div className="flex items-center justify-center h-32 md:h-40">
-              <Image
-                src={imagePath}
-                alt="image"
-                width={100}
-                height={100}
-                objectFit="contain"
-              />
+            <div className="flex items-center">
+              <Image src={imagePath} alt="image" width={256} height={256} />
             </div>
           </div>
         ))}

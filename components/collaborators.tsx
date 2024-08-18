@@ -12,7 +12,7 @@ const Collaborators = () => {
   return (
     <motion.div
       id="sponsors"
-      className="relative py-8 flex flex-col items-center justify-center"
+      className="relative py-8 px-10 flex flex-col items-center justify-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
@@ -26,8 +26,8 @@ const Collaborators = () => {
           collaborators
         </h1>
         <p className="mt-4 text-xl text-gray-400 font-mono">
-            Check out who makes the event possible
-          </p>
+          Check out who makes the event possible
+        </p>
       </div>
       <div className="w-full">
         <Carousel />

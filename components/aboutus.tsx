@@ -2,6 +2,7 @@
 
 import localFont from "next/font/local";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
@@ -19,14 +20,8 @@ const AboutUs = () => {
       viewport={{ once: true }}
     >
       <div className="card-body">
-        <h1 className="text-3xl md:text-6xl font-bold mt-10 text-center">
-          <span className="inline-flex items-center flex-wrap justify-center">
-            What is{" "}
-            <span className={`${spacex.className} mx-2`}>TechX</span>
-            <span className="text-2xl md:text-3xl text-white font-semibold">
-              Bangalore
-            </span>
-          </span>
+        <h1 className="text-4xl md:text-6xl font-semibold text-center">
+          What is <span className={spacex.className}>TechX</span> Bangalore
         </h1>
         <p className="text-justify mt-6 font-normal">
           <strong>TechX</strong> is a comprehensive event organized by the IEEE
