@@ -142,7 +142,7 @@ const OraganizerPage = () => {
           className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4 mt-10 rounded-xl"
           href="/"
         >
-          Go Home
+          Back to Home
         </Link>
       </div>
     </div>
