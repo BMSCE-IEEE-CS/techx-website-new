@@ -82,6 +82,21 @@ const Schedule = () => {
           : "B. M. S. College Of Engineering"}
       </h1>
 
+      {day !== 0 ? (
+        <div>
+          <h1 className="text-xl md:text-2xl text-center">
+            <span className="text-mOrange mr-2 font-bold">Date:</span>
+            {day === 1
+              ? "August 20th, 2024"
+              : day === 2
+              ? "August 21st, 2024"
+              : "August 22nd, 2024"}
+          </h1>
+        </div>
+      ) : (
+        <div></div>
+      )}
+
       <div className="w-3/4 md:w-max mx-auto">
         {day === 0 && (
           <div className="space-y-6 border-l-2 mx-auto border-dashed">
