@@ -108,7 +108,7 @@ const Schedule = () => {
               <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
               <div className="ml-6 space-y-2">
                 <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
-                <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
+                <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-300">
                   {s.description}
                 </p>
                 {s.rp && (
