@@ -161,7 +161,7 @@ export const organizers = {
       "Nandan M. N.",
       "Pranati A. P.",
       "Pranav Kiran Kumar Rao",
-      "Rishika Nayana Shakti",
+      "Rishika Nayana Shakthi",
       "Sahithi Bollempalli",
       "Tanisha Prakash",
       "Vageesh G. N.",
