@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const batman = localFont({ src: "../app/batmfa__.ttf" });
+
 const Schedule = () => {
   const [day, setDay] = useState(0);
 
@@ -22,13 +23,14 @@ const Schedule = () => {
       viewport={{ once: true }}
     >
       <h1
-        className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop `}
+        className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop`}
       >
         SCHEDULE
       </h1>
       <p className="text-lg text-center w-3/4 md:text-xl mt-4 font-mono text-gray-400">
         Stay on Top with Our Event Schedule
       </p>
+
       <div className="mt-10 flex flex-col items-center">
         <button
           onClick={() => setDay(0)}
@@ -78,24 +80,22 @@ const Schedule = () => {
       <h1 className="text-xl md:text-2xl text-center">
         <span className="text-mOrange mr-2 font-bold">Venue:</span>
         {day === 0
-          ? "Christ(Deemed to be University), Kengeri Campus"
+          ? "Christ (Deemed to be University), Kengeri Campus"
           : "B. M. S. College Of Engineering"}
       </h1>
 
-      {day !== 0 ? (
-        <div>
-          <h1 className="text-xl md:text-2xl text-center">
-            <span className="text-mOrange mr-2 font-bold">Date:</span>
-            {day === 1
-              ? "August 20th, 2024"
-              : day === 2
-              ? "August 21st, 2024"
-              : "August 22nd, 2024"}
-          </h1>
-        </div>
-      ) : (
-        <div></div>
-      )}
+      <div>
+        <h1 className="text-xl md:text-2xl text-center mb-[10%]">
+          <span className="text-mOrange mr-2 font-bold">Date:</span>
+          {day === 0
+            ? "August 9th, 2024 and August 18th, 2024"
+            : day === 1
+            ? "August 20th, 2024"
+            : day === 2
+            ? "August 21st, 2024"
+            : "August 22nd, 2024"}
+        </h1>
+      </div>
 
       <div className="w-3/4 md:w-max mx-auto">
         {day === 0 && (
@@ -108,20 +108,14 @@ const Schedule = () => {
                   <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
                     {s.description}
                   </p>
-                  <div>
-                    {s.rp !== "" ? (
-                      <div className="flex items-center gap-2">
-                        <MdPerson size={20} />
-                        <p className="mt-1 block text-sm font-semibold text-white">
-                          {s.rp}
-                        </p>
-                      </div>
-                    ) : (
-                      <div>
-                        <h1>nope</h1>
-                      </div>
-                    )}
-                  </div>
+                  {s.rp && (
+                    <div className="flex items-center gap-2">
+                      <MdPerson size={20} />
+                      <p className="mt-1 block text-sm font-semibold text-white">
+                        {s.rp}
+                      </p>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
                     <FaRegClock size={20} />
                     <p className="mt-1 block text-sm font-semibold text-white">
@@ -139,24 +133,18 @@ const Schedule = () => {
               <div key={id} className="relative w-full">
                 <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
                 <div className="ml-6 space-y-2">
-                  <h4 className="font-bold text-mOrange text-2xl text-wrap ">
-                    {s.name}
-                  </h4>
+                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
                   <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
                     {s.description}
                   </p>
-                  <div>
-                    {s.rp !== "" ? (
-                      <div className="flex items-center gap-2">
-                        <MdPerson size={20} />
-                        <p className="mt-1 block text-sm font-semibold text-white">
-                          {s.rp}
-                        </p>
-                      </div>
-                    ) : (
-                      <div></div>
-                    )}
-                  </div>
+                  {s.rp && (
+                    <div className="flex items-center gap-2">
+                      <MdPerson size={20} />
+                      <p className="mt-1 block text-sm font-semibold text-white">
+                        {s.rp}
+                      </p>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
                     <FaRegClock size={20} />
                     <p className="mt-1 block text-sm font-semibold text-white">
@@ -178,18 +166,14 @@ const Schedule = () => {
                   <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-400">
                     {s.description}
                   </p>
-                  <div>
-                    {s.rp !== "" ? (
-                      <div className="flex items-center gap-2">
-                        <MdPerson size={20} />
-                        <p className="mt-1 block text-sm font-semibold text-white">
-                          {s.rp}
-                        </p>
-                      </div>
-                    ) : (
-                      <div></div>
-                    )}
-                  </div>
+                  {s.rp && (
+                    <div className="flex items-center gap-2">
+                      <MdPerson size={20} />
+                      <p className="mt-1 block text-sm font-semibold text-white">
+                        {s.rp}
+                      </p>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
                     <FaRegClock size={20} />
                     <p className="mt-1 block text-sm font-semibold text-white">
@@ -207,24 +191,18 @@ const Schedule = () => {
               <div key={id} className="relative w-full">
                 <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
                 <div className="ml-6 space-y-2">
-                  <h4 className="font-bold text-mOrange text-2xl text-wrap">
-                    {s.name}
-                  </h4>
-                  <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-200/90">
+                  <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
+                  <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-200/50">
                     {s.description}
                   </p>
-                  <div>
-                    {s.rp !== "" ? (
-                      <div className="flex items-center gap-2">
-                        <MdPerson size={20} />
-                        <p className="mt-1 block text-sm font-semibold text-white">
-                          {s.rp}
-                        </p>
-                      </div>
-                    ) : (
-                      <div></div>
-                    )}
-                  </div>
+                  {s.rp && (
+                    <div className="flex items-center gap-2">
+                      <MdPerson size={20} />
+                      <p className="mt-1 block text-sm font-semibold text-white">
+                        {s.rp}
+                      </p>
+                    </div>
+                  )}
                   <div className="flex items-center gap-2">
                     <FaRegClock size={20} />
                     <p className="mt-1 block text-sm font-semibold text-white">
