@@ -111,14 +111,14 @@ const Schedule = () => {
                 <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-300">
                   {s.description}
                 </p>
-                {s.rp && (
+                {/* {s.rp && (
                   <div className="flex items-center gap-2">
                     <MdPerson size={20} />
                     <p className="mt-1 block text-sm font-semibold text-white">
                       {s.rp}
                     </p>
                   </div>
-                )}
+                )} */}
                 <div className="flex items-center gap-2">
                   <FaRegClock size={20} />
                   <p className="mt-1 block text-sm font-semibold text-white">
