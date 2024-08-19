@@ -58,7 +58,7 @@ const Hero = () => {
             <div className="m-10 text-center">
               <Link
                 href="#"
-                className="bg-mOrange px-4 text-2xl md:text-3xl py-2 border-2 border-mOrange hover:bg-black rounded-tr-3xl rounded-bl-3xl transition-all duration-150 ease-in"
+                className="bg-mOrange px-6 text-xl md:text-3xl py-2 border-2 border-mOrange hover:bg-black rounded-tr-3xl rounded-bl-3xl transition-all duration-150 ease-in whitespace-nowrap inline-block"
                 passHref
                 target="_blank"
               >
