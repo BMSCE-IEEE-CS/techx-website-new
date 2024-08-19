@@ -25,7 +25,7 @@ const Collaborators = () => {
         >
           collaborators
         </h1>
-        <p className="mt-4 text-xl text-gray-400 font-mono">
+        <p className="mt-4 text-xl text-gray-400 text-center font-mono">
           Check out who makes the event possible
         </p>
       </div>

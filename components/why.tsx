@@ -27,7 +27,7 @@ const Why = () => {
           <div className="flex flex-col md:flex-row gap-20 items-center mt-10 max-w-screen-xl mx-10">
             <Image
               className="w-3/4"
-              src="/images/aboutimg.jpg"
+              src="/images/robot2.jpg"
               width={200}
               height={200}
               alt="about image"
