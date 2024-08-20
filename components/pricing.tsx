@@ -68,6 +68,7 @@ const Pricing = () => {
             <div className="mt-auto">
               <a
                 href="#"
+                target="_blank"
                 className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
               >
                 Get Ticket
@@ -117,6 +118,7 @@ const Pricing = () => {
               <div className="mt-auto">
                 <a
                   href="#"
+                  target="_blank"
                   className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
                 >
                   Get Ticket
@@ -167,6 +169,7 @@ const Pricing = () => {
               <div className="mt-auto">
                 <a
                   href="#"
+                  target="_blank"
                   className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
                 >
                   Get Ticket

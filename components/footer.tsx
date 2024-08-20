@@ -166,7 +166,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <p className="text-lg md:text-xl text-body-color dark:text-dark-6 text-center mt-10">
-        <span className="text-xl md:text-2xl">&copy;</span> TechX. All rights
+        <span className="text-xl md:text-2xl">&copy;</span> TechX Bangalore 2024. All rights
         reserved
       </p>
     </footer>
