@@ -77,7 +77,7 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <Link
-            href="#"
+            href="https://web.ticketdude.app/e/81"
             className="bg-mOrange px-4 text-lg py-2 border-2 border-mOrange hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
             passHref
             target="_blank"

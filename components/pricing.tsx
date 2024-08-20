@@ -40,7 +40,7 @@ const Pricing = () => {
             </div>
             <div className="mb-8">
               <span className="text-5xl font-extrabold text-white">
-                &#8377;249
+                &#8377;299
               </span>
             </div>
             <ul className="mb-8 space-y-4 text-black">
@@ -67,7 +67,7 @@ const Pricing = () => {
             </ul>
             <div className="mt-auto">
               <a
-                href="#"
+                href="https://web.ticketdude.app/e/81"
                 target="_blank"
                 className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
               >
@@ -89,57 +89,6 @@ const Pricing = () => {
                 </p>
               </div>
               <div className="mb-8 text-left">
-                <span className="text-5xl font-extrabold text-white">
-                  &#8377;349
-                </span>
-              </div>
-              <ul className="mb-8 space-y-4 text-black">
-                <li className="flex items-center gap-2.5 font-medium">
-                  <FaCheckCircle className="text-white" />
-                  <span>IEEE Goodies</span>
-                </li>
-                <li className="flex items-center gap-2.5 font-medium">
-                  <FaCheckCircle className="text-white" />
-                  <span>Lunch</span>
-                </li>
-                <li className="flex items-center gap-2.5 font-medium">
-                  <FaCheckCircle className="text-white" />
-                  <span>Snacks and Refreshments</span>
-                </li>
-                <li className="flex items-center gap-2.5 font-medium">
-                  <FaCheckCircle className="text-white" />
-                  <span>Entry to all events and competitions</span>
-                </li>
-                <li className="flex items-center gap-2.5 font-medium">
-                  <FaCheckCircle className="text-white" />
-                  <span>Certificate of Participation</span>
-                </li>
-              </ul>
-              <div className="mt-auto">
-                <a
-                  href="#"
-                  target="_blank"
-                  className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
-                >
-                  Get Ticket
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
-            <div className="mb-8">
-              <h3 className="text-2xl font-bold text-white text-center">
-                Non-IEEE Members
-              </h3>
-            </div>
-            <div className="flex flex-col flex-grow justify-end">
-              <div className="mb-8">
-                <p className="mt-4 text-black text-[1.2rem] font-bold">
-                  3 Day Pass
-                </p>
-              </div>
-              <div className="mb-8">
                 <span className="text-5xl font-extrabold text-white">
                   &#8377;399
                 </span>
@@ -168,7 +117,58 @@ const Pricing = () => {
               </ul>
               <div className="mt-auto">
                 <a
-                  href="#"
+                  href="https://web.ticketdude.app/e/81"
+                  target="_blank"
+                  className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+                >
+                  Get Ticket
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-white text-center">
+                Non-IEEE Members
+              </h3>
+            </div>
+            <div className="flex flex-col flex-grow justify-end">
+              <div className="mb-8">
+                <p className="mt-4 text-black text-[1.2rem] font-bold">
+                  3 Day Pass
+                </p>
+              </div>
+              <div className="mb-8">
+                <span className="text-5xl font-extrabold text-white">
+                  &#8377;499
+                </span>
+              </div>
+              <ul className="mb-8 space-y-4 text-black">
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>IEEE Goodies</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Lunch</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Snacks and Refreshments</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Entry to all events and competitions</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Certificate of Participation</span>
+                </li>
+              </ul>
+              <div className="mt-auto">
+                <a
+                  href="https://web.ticketdude.app/e/81"
                   target="_blank"
                   className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
                 >
