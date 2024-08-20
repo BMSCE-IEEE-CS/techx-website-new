@@ -5,7 +5,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
-const batman = localFont({src: "../app/batmfa__.ttf"});
+const batman = localFont({ src: "../app/batmfa__.ttf" });
 
 const Why = () => {
   return (
@@ -14,8 +14,8 @@ const Why = () => {
       <div className="relative z-10 flex flex-col items-center justify-center">
         <motion.div
           className="relative py-20 flex flex-col items-center justify-center"
-          initial={{ opacity: 0, x: 100 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.5 }}
           viewport={{ once: true }}
         >
