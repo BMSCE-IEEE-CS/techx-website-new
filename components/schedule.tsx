@@ -42,8 +42,8 @@ const Schedule = () => {
           onClick={() => setDay(0)}
           className={`${
             spacex.className
-          } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
-            day === 0 ? "bg-mOrange text-black" : ""
+          } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
+            day === 0 ? "bg-mBlue text-black" : ""
           }`}
         >
           Pre-Events
@@ -54,8 +54,8 @@ const Schedule = () => {
             onClick={() => setDay(1)}
             className={`${
               spacex.className
-            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
-              day === 1 ? "bg-mOrange text-black" : ""
+            } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
+              day === 1 ? "bg-mBlue text-black" : ""
             }`}
           >
             Day 1
@@ -64,8 +64,8 @@ const Schedule = () => {
             onClick={() => setDay(2)}
             className={`${
               spacex.className
-            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
-              day === 2 ? "bg-mOrange text-black" : ""
+            } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
+              day === 2 ? "bg-mBlue text-black" : ""
             }`}
           >
             Day 2
@@ -74,8 +74,8 @@ const Schedule = () => {
             onClick={() => setDay(3)}
             className={`${
               spacex.className
-            } border-2 border-mOrange px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
-              day === 3 ? "bg-mOrange text-black" : ""
+            } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
+              day === 3 ? "bg-mBlue text-black" : ""
             }`}
           >
             Day 3
@@ -85,14 +85,14 @@ const Schedule = () => {
 
       <div className="w-full max-w-4xl mx-auto px-4 mt-8">
         <h1 className="text-xl md:text-2xl text-center">
-          <span className="text-mOrange mr-2 font-bold">Venue:</span>
+          <span className="text-mBlue mr-2 font-bold">Venue:</span>
           {day === 0
             ? "Christ (Deemed to be University), Kengeri Campus"
             : "B. M. S. College Of Engineering"}
         </h1>
 
         <h1 className="text-xl md:text-2xl text-center mt-4 mb-8">
-          <span className="text-mOrange mr-2 font-bold">Date:</span>
+          <span className="text-mBlue mr-2 font-bold">Date:</span>
           {day === 0
             ? "September 9th, 2024 and September 18th, 2024"
             : day === 1
@@ -105,9 +105,9 @@ const Schedule = () => {
         <div className="space-y-6 border-l-2 mx-auto border-dashed">
           {schedule[getScheduleDay(day)].map((s, id) => (
             <div key={id} className="relative w-full">
-              <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mOrange rounded-full p-0.5" />
+              <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mBlue rounded-full p-0.5" />
               <div className="ml-6 space-y-2">
-                <h4 className="font-bold text-mOrange text-2xl">{s.name}</h4>
+                <h4 className="font-bold text-mBlue text-2xl">{s.name}</h4>
                 <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-300">
                   {s.description}
                 </p>

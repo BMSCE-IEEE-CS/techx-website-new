@@ -19,7 +19,7 @@ const Pricing = () => {
       <div id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h1
-            className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
+            className={`${batman.className} text-4xl md:text-5xl drop-shadow-blueDrop tracking-wider`}
           >
             Pricing
           </h1>
@@ -29,12 +29,12 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
                 IEEE Computer Society Members
               </h3>
-              <p className="mt-4 text-black text-[1.2rem] font-bold">
+              <p className="mt-4 text-gray-200 text-[1.2rem] font-bold">
                 3 Day Pass
               </p>
             </div>
@@ -43,7 +43,7 @@ const Pricing = () => {
                 &#8377;299
               </span>
             </div>
-            <ul className="mb-8 space-y-4 text-black">
+            <ul className="mb-8 space-y-4 text-gray-200">
               <li className="flex items-center gap-2.5 font-medium">
                 <FaCheckCircle className="text-white" />
                 <span>IEEE Goodies</span>
@@ -76,7 +76,7 @@ const Pricing = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
                 IEEE Members
@@ -84,7 +84,7 @@ const Pricing = () => {
             </div>
             <div className="flex flex-col flex-grow justify-end">
               <div className="mb-8">
-                <p className="mt-4 text-black text-[1.2rem] font-bold text-left">
+                <p className="mt-4 text-gray-200 text-[1.2rem] font-bold text-left">
                   3 Day Pass
                 </p>
               </div>
@@ -93,7 +93,7 @@ const Pricing = () => {
                   &#8377;399
                 </span>
               </div>
-              <ul className="mb-8 space-y-4 text-black">
+              <ul className="mb-8 space-y-4 text-gray-200">
                 <li className="flex items-center gap-2.5 font-medium">
                   <FaCheckCircle className="text-white" />
                   <span>IEEE Goodies</span>
@@ -127,7 +127,7 @@ const Pricing = () => {
             </div>
           </div>
 
-          <div className="flex flex-col bg-gradient-to-br from-[#cc6600] to-[#d88c1f] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
                 Non-IEEE Members
@@ -135,7 +135,7 @@ const Pricing = () => {
             </div>
             <div className="flex flex-col flex-grow justify-end">
               <div className="mb-8">
-                <p className="mt-4 text-black text-[1.2rem] font-bold">
+                <p className="mt-4 text-gray-200 text-[1.2rem] font-bold">
                   3 Day Pass
                 </p>
               </div>
@@ -144,7 +144,7 @@ const Pricing = () => {
                   &#8377;499
                 </span>
               </div>
-              <ul className="mb-8 space-y-4 text-black">
+              <ul className="mb-8 space-y-4 text-gray-200">
                 <li className="flex items-center gap-2.5 font-medium">
                   <FaCheckCircle className="text-white" />
                   <span>IEEE Goodies</span>

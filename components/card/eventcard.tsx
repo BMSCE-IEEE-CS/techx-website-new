@@ -12,7 +12,7 @@ interface EventCardProp {
 
 const EventCard = ({ name, image, day }: EventCardProp) => {
   return (
-    <div className="flex flex-col rounded-xl border-4 items-center border-yellow-400 bg-mOrange/20 hover:bg-mOrange/60 transition-all duration-500 ease-in-out">
+    <div className="flex flex-col rounded-xl border-4 items-center border-yellow-400 bg-mBlue/20 hover:bg-mBlue/60 transition-all duration-500 ease-in-out">
       <h1
         className={`${spacex.className} mb-2 border-b-4 w-full text-xl border-yellow-400 p-2 text-center font-bold`}
       >

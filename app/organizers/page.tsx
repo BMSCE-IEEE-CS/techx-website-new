@@ -12,7 +12,7 @@ const OraganizerPage = () => {
     <div className="w-full">
       <div className="flex flex-col items-start mx-6">
         <Link
-          className="flex items-center gap-2 m-4 text-xl font-bold bg-mOrange px-4 py-2 rounded-xl"
+          className="flex items-center gap-2 m-4 text-xl font-bold bg-mBlue px-4 py-2 rounded-xl"
           href="/"
         >
           <FaArrowLeftLong />
@@ -25,7 +25,7 @@ const OraganizerPage = () => {
         </h1>
         {/* BMSCE Section */}
         <div className="flex flex-col w-full mt-10">
-          <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
+          <h1 className="text-4xl font-bold text-mBlue text-center mb-4">
             BMSCE IEEE Computer Society
           </h1>
           <br />
@@ -85,7 +85,7 @@ const OraganizerPage = () => {
         <br />{" "}
         <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-white" />
         <div className="flex flex-col w-full mt-10">
-          <h1 className="text-4xl font-bold text-mOrange text-center mb-4">
+          <h1 className="text-4xl font-bold text-mBlue text-center mb-4">
             Christ University IEEE Computer Society
           </h1>
           <br />
@@ -139,7 +139,7 @@ const OraganizerPage = () => {
           </div> */}
         </div>
         <Link
-          className="text-center w-max mx-auto m-4 text-xl font-bold bg-mOrange px-6 py-4 mt-10 rounded-xl"
+          className="text-center w-max mx-auto m-4 text-xl font-bold bg-mBlue px-6 py-4 mt-10 rounded-xl"
           href="/"
         >
           Back to Home

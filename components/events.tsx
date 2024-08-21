@@ -3,7 +3,7 @@ import React from "react";
 import EventCard from "./card/eventcard";
 import { eventsData } from "@/utils/data";
 
-const batman = localFont({src: "../app/batmfa__.ttf"});
+const batman = localFont({ src: "../app/batmfa__.ttf" });
 
 const Events = () => {
   return (
@@ -11,7 +11,7 @@ const Events = () => {
       id="events"
       className="relative py-20 flex flex-col items-center justify-center min-h-screen"
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-mOrange to-black opacity-80 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-mBlue to-black opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center justify-center">
         <h1
           className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}

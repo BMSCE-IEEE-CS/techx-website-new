@@ -10,19 +10,19 @@ const config: Config = {
     extend: {
       colors: {
         background: "#353535",
-        mOrange: "#f79400",
+        mBlue: "#1560a3",
       },
       backgroundImage: {
         hero: "url(/images/techx.png)",
       },
       dropShadow: {
-        orangeDrop: "6px 2px 2px rgb(247, 148, 0)",
+        blueDrop: "6px 2px 2px rgb(21, 96, 163)",
       },
       listStyleType: {
         points: "url(/images/arrow.png)",
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require("daisyui")],
 };
 export default config;

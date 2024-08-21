@@ -13,7 +13,7 @@ const AboutUs = () => {
   return (
     <motion.div
       id="about"
-      className="card text-white my-20 bg-gradient-to-b w-[90%] md:w-[90%] mx-auto from-[#cc5500] to-[#e68a00]"
+      className="card text-white bg-gradient-to-br w-[90%] md:w-4/5 mx-auto from-[#08233b] to-[#2288e3]"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}

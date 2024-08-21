@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoCloseSharp } from "react-icons/io5";
 import localFont from "next/font/local";
+import Image from "next/image";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
@@ -12,40 +13,43 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div>
-      <div className="static flex text-white items-center justify-between px-4 py-6 md:px-10 sm:px-2">
+    <div className="bg-[#7bb8ee]">
+      <div className="static flex items-center justify-between px-4 py-6 md:px-12 sm:px-2">
         <Link href="/">
-          <h1 className={`${spacex.className} text-3xl`}>
-            Tech<span className="text-mOrange">X</span>
-          </h1>
+          <Image
+            src="/images/techxlogoblack.png"
+            width={200}
+            height={200}
+            alt="logo black"
+          />
         </Link>
-        <div className="hidden md:flex gap-7 text-lg justify-center flex-1">
+        <div className="hidden md:flex gap-7 text-lg justify-center flex-1 text-black">
           <Link
-            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
             href="/"
           >
             Home
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
             href="#about"
           >
             About Us
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
             href="#schedule"
           >
             Schedule
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
             href="#sponsors"
           >
             Collaborators
           </Link>
           <Link
-            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mOrange  transition-all duration-150 ease-in"
+            className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
             href="#pricing"
           >
             Pricing Plan
@@ -57,7 +61,7 @@ const Navbar = () => {
           ) : (
             <Link
               href="#"
-              className="bg-mOrange px-4 text-lg py-2 border-2 border-mOrange hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
+              className="bg-mBlue px-4 text-lg py-2 border-4 border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
               passHref
               target="_blank"
             >
@@ -65,7 +69,7 @@ const Navbar = () => {
             </Link>
           )} */}
           <button
-            className=" px-4 py-2 rounded-xl border-mOrange border-2 transition-all duration-150 ease-in"
+            className=" px-4 py-2 rounded-xl border-mBlue border-4 transition-all duration-150 ease-in"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             {isMenuOpen ? (
@@ -78,7 +82,7 @@ const Navbar = () => {
         <div className="hidden md:block">
           <Link
             href="https://web.ticketdude.app/e/81"
-            className="bg-mOrange px-4 text-lg py-2 border-2 border-mOrange hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
+            className="bg-mBlue px-4 text-lg py-2 border-4 text-white hover:text-black border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
             passHref
             target="_blank"
           >
@@ -121,7 +125,7 @@ const Navbar = () => {
             </Link>
             <Link
               href=""
-              className="bg-mOrange px-4 text-lg py-2 border-2 border-mOrange hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
+              className="bg-mBlue px-4 text-lg py-2 border-4  border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
               passHref
               target="_blank"
             >

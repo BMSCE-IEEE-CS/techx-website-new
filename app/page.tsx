@@ -6,14 +6,12 @@ import Schedule from "@/components/schedule";
 import Collaborators from "@/components/collaborators";
 import Footer from "../components/footer";
 import Pricing from "../components/pricing";
-import Sponsor from "@/components/sponsor";
 import LearnMore from "../components/learnmore";
 
 export default function Home() {
   return (
-    <div className="flex flex-col bg-black">
+    <div className="flex flex-col">
       <Hero />
-      <Sponsor />
       <AboutUs />
       <LearnMore />
       <Why />
