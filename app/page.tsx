@@ -7,10 +7,12 @@ import Collaborators from "@/components/collaborators";
 import Footer from "../components/footer";
 import Pricing from "../components/pricing";
 import LearnMore from "../components/learnmore";
+import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
     <div className="flex flex-col bg-[#F0FFFF]">
+      <Navbar />
       <Hero />
       <AboutUs />
       <LearnMore />

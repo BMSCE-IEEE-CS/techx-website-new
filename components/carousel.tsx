@@ -5,13 +5,13 @@ import React from "react";
 
 const Carousel = () => {
   const images = [
-    "/resized/ieee-logo.png",
-    "/resized/ieee-csbc.png",
-    "/resized/ieee-cs-logo.png",
-    "/resized/bmsce-ieee-cs.png",
-    "/resized/Bangalore-Section-Logo.png",
-    "/resized/syplogo.png",
-    "/resized/ieee-cs-cu.png",
+    "/resized/ieee-logo-black.png",
+    "/resized/ieee-csbc-black.png",
+    "/resized/ieee-cs-logo-black.png",
+    "/resized/bmsceieeecsblack.png",
+    "/resized/ieeebangaloreblack.png",
+    "/resized/syplogoblack.png",
+    "/resized/ieeecucsblack.png",
   ];
 
   const settings: Settings = {

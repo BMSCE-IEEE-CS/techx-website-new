@@ -12,7 +12,7 @@ const OraganizerPage = () => {
     <div className="w-full">
       <div className="flex flex-col items-start mx-6">
         <Link
-          className="flex items-center gap-2 m-4 text-xl font-bold bg-mBlue px-4 py-2 rounded-xl"
+          className="flex items-center gap-2 m-4 text-xl font-bold text-white bg-mBlue px-4 py-2 rounded-xl"
           href="/"
         >
           <FaArrowLeftLong />
@@ -48,7 +48,7 @@ const OraganizerPage = () => {
               driving innovation and advancing technology.
             </h2>
           </div>
-          <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-white" />
+          <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-gray-400" />
           <div className="divide-x-2 divide-y-2"></div>
           <div className="">
             <h1 className="text-4xl font-bold text-center">
@@ -83,7 +83,7 @@ const OraganizerPage = () => {
           </div>
         </div>
         <br />{" "}
-        <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-white" />
+        <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-gray-400" />
         <div className="flex flex-col w-full mt-10">
           <h1 className="text-4xl font-bold text-mBlue text-center mb-4">
             Christ University IEEE Computer Society
@@ -107,7 +107,7 @@ const OraganizerPage = () => {
               leaders with valuable resources and opportunities.
             </h2>
           </div>
-          <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-white" />
+          <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-gray-400" />
           <div className="">
             <h1 className="text-4xl font-bold text-center">
               Executive Committee
@@ -139,7 +139,7 @@ const OraganizerPage = () => {
           </div> */}
         </div>
         <Link
-          className="text-center w-max mx-auto m-4 text-xl font-bold bg-mBlue px-6 py-4 mt-10 rounded-xl"
+          className="text-center w-max mx-auto m-4 text-xl font-bold text-white bg-mBlue px-6 py-4 mt-10 rounded-xl"
           href="/"
         >
           Back to Home

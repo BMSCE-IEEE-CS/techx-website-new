@@ -32,7 +32,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full items-center bg-gradient-to-b from-[#7bb8ee] to-[#F0FFFF]">
+    <div className="flex flex-col px-10 w-full items-center bg-gradient-to-b from-[#7bb8ee] to-[#F0FFFF]">
       <div className="flex flex-col items-center flex-grow">
         <div className="flex flex-col mt-52 max-w-full px-4">
           <div className="text-center mb-10">
