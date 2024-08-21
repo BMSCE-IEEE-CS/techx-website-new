@@ -1,7 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
 import Image from 'next/image'
-import Logo from "../public/images/Tech X Bangalore Colour White Orange.png"
+import Logo from "../public/images/techxlogoblack.png"
 import {
   FaFacebookF,
   FaInstagram,
@@ -28,7 +28,7 @@ const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="bg-black text-white py-8">
+    <footer className="bg-[#F0FFFF] text-black py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-20">
@@ -37,8 +37,6 @@ const Footer: React.FC = () => {
                 <Image
                   src={Logo}
                   alt="TechX Logo"
-                  layout="fill"
-                  objectFit="contain"
                   priority
                 />
               </div>
