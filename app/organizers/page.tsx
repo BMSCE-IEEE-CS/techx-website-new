@@ -19,7 +19,7 @@ const OraganizerPage = () => {
           <p>Back</p>
         </Link>
         <h1
-          className={`${batman.className} text-4xl md:text-6xl drop-shadow-orangeDrop text-center w-full`}
+          className={`${batman.className} text-4xl md:text-6xl drop-shadow-blueDrop text-center w-full`}
         >
           Organizers
         </h1>

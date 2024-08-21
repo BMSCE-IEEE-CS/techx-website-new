@@ -21,7 +21,7 @@ const Collaborators = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-black to-mBlue opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center mb-4">
         <h1
-          className={`${batman.className} text-2xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
+          className={`${batman.className} text-2xl md:text-5xl drop-shadow-blueDrop tracking-wider`}
         >
           collaborators
         </h1>

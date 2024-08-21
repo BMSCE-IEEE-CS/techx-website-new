@@ -29,11 +29,11 @@ const Schedule = () => {
       viewport={{ once: true }}
     >
       <h1
-        className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop`}
+        className={`${batman.className} text-4xl md:text-5xl drop-shadow-blueDrop`}
       >
         SCHEDULE
       </h1>
-      <p className="text-lg text-center w-3/4 md:text-xl mt-4 font-mono text-gray-400">
+      <p className="text-lg text-center w-3/4 md:text-xl mt-4 font-mono text-gray-600">
         Stay on Top with Our Event Schedule
       </p>
 
@@ -43,7 +43,7 @@ const Schedule = () => {
           className={`${
             spacex.className
           } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
-            day === 0 ? "bg-mBlue text-black" : ""
+            day === 0 ? "bg-mBlue text-white" : ""
           }`}
         >
           Pre-Events
@@ -55,7 +55,7 @@ const Schedule = () => {
             className={`${
               spacex.className
             } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
-              day === 1 ? "bg-mBlue text-black" : ""
+              day === 1 ? "bg-mBlue text-white" : ""
             }`}
           >
             Day 1
@@ -65,7 +65,7 @@ const Schedule = () => {
             className={`${
               spacex.className
             } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
-              day === 2 ? "bg-mBlue text-black" : ""
+              day === 2 ? "bg-mBlue text-white" : ""
             }`}
           >
             Day 2
@@ -75,7 +75,7 @@ const Schedule = () => {
             className={`${
               spacex.className
             } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
-              day === 3 ? "bg-mBlue text-black" : ""
+              day === 3 ? "bg-mBlue text-white" : ""
             }`}
           >
             Day 3
@@ -102,13 +102,13 @@ const Schedule = () => {
             : "September 22nd, 2024"}
         </h1>
 
-        <div className="space-y-6 border-l-2 mx-auto border-dashed">
+        <div className="space-y-6 border-l-2 mx-auto border-dashed border-gray-600">
           {schedule[getScheduleDay(day)].map((s, id) => (
             <div key={id} className="relative w-full">
-              <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-black border-2 border-mBlue rounded-full p-0.5" />
+              <div className="absolute z-10 -ml-3.5 h-7 w-7 bg-white border-2 border-mBlue rounded-full p-0.5" />
               <div className="ml-6 space-y-2">
                 <h4 className="font-bold text-mBlue text-2xl">{s.name}</h4>
-                <p className="mt-2 max-w-screen-sm text-base text-justify text-gray-300">
+                <p className="mt-2 max-w-screen-sm text-base text-justify text-black">
                   {s.description}
                 </p>
                 {/* {s.rp && (
@@ -121,7 +121,7 @@ const Schedule = () => {
                 )} */}
                 <div className="flex items-center gap-2">
                   <FaRegClock size={20} />
-                  <p className="mt-1 block text-sm font-semibold text-white">
+                  <p className="mt-1 block text-sm font-semibold text-black">
                     {s.time}
                   </p>
                 </div>

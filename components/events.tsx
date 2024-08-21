@@ -14,7 +14,7 @@ const Events = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-mBlue to-black opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center justify-center">
         <h1
-          className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
+          className={`${batman.className} text-4xl md:text-5xl drop-shadow-blueDrop tracking-wider`}
         >
           EVENTS
         </h1>
