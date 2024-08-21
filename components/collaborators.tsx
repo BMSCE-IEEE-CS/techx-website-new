@@ -18,14 +18,17 @@ const Collaborators = () => {
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-     <div className="absolute inset-0 bg-gradient-to-t from-[#7bb8ee] to-white opacity-80 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-[#7bb8ee] to-white opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center mb-4">
         <h1
           className={`${batman.className} text-2xl md:text-5xl drop-shadow-blueDrop tracking-wider`}
         >
           collaborators
         </h1>
-        <p className="mt-4 text-xl text-black text-center font-mono" style={{fontWeight:"500"}}>
+        <p
+          className="mt-4 text-xl text-gray-600 text-center font-mono"
+          style={{ fontWeight: "500" }}
+        >
           Check out who makes the event possible
         </p>
       </div>

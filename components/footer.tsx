@@ -1,7 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
-import Image from 'next/image'
-import Logo from "../public/images/techxlogoblack.png"
+import Image from "next/image";
+import Logo from "../public/images/techxlogo.png";
 import {
   FaFacebookF,
   FaInstagram,
@@ -13,8 +13,8 @@ const spacex = localFont({ src: "../app/SpaceX.ttf" });
 
 const Footer: React.FC = () => {
   const iconStyle = {
-    backgroundColor: "black", 
-    color: "white", 
+    backgroundColor: "black",
+    color: "white",
     borderRadius: "50%",
     padding: "10px",
     fontSize: "24px",
@@ -24,21 +24,17 @@ const Footer: React.FC = () => {
     justifyContent: "center",
     width: "50px",
     height: "50px",
-    border: "2px solid white", 
+    border: "2px solid white",
   };
 
   return (
-    <footer className="bg-[#F0FFFF] text-black py-8">
+    <footer className="bg-black text-white py-8">
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           <div className="text-center lg:text-left mb-4 lg:mb-0 lg:mr-20">
-          <div className="mt-5 text-center flex justify-center">
+            <div className="mt-5 text-center flex justify-center">
               <div className="relative w-[300px] h-[150px] p-0 md:w-[350px] md:h-[100px]">
-                <Image
-                  src={Logo}
-                  alt="TechX Logo"
-                  priority
-                />
+                <Image src={Logo} alt="TechX Logo" priority />
               </div>
             </div>
             <p className="mt-2 w-90 sm:w-full md:w-90 lg:w-90 xl:w-80 select-none">
@@ -64,7 +60,7 @@ const Footer: React.FC = () => {
                   referrerPolicy="no-referrer-when-downgrade"
                 ></iframe>
               </div>
-              <h3 className="text-xl font-bold mt-4 mb-2 lg:mb-0 ml-[6%]">
+              <h3 className="text-xl font-bold mt-4 mb-2 lg:mb-0 mx-auto">
                 B.M.S. College of Engineering
               </h3>
               <div className="flex justify-center w-full mt-2">
@@ -164,8 +160,8 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <p className="text-lg md:text-xl text-body-color dark:text-dark-6 text-center mt-10">
-        <span className="text-xl md:text-2xl">&copy;</span> TechX Bangalore 2024. All rights
-        reserved
+        <span className="text-xl md:text-2xl">&copy;</span> TechX Bangalore
+        2024. All rights reserved
       </p>
     </footer>
   );
