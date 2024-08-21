@@ -10,7 +10,7 @@ const batman = localFont({ src: "../app/batmfa__.ttf" });
 const Why = () => {
   return (
     <div className="relative py-20 flex flex-col items-center justify-center">
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-mBlue opacity-80 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-[#7bb8ee] opacity-80 z-0"></div>
       <div className="relative z-10 flex flex-col items-center justify-center">
         <motion.div
           className="relative py-20 flex flex-col items-center justify-center"
@@ -20,7 +20,7 @@ const Why = () => {
           viewport={{ once: true }}
         >
           <h1
-            className={`${batman.className} text-4xl md:text-5xl drop-shadow-orangeDrop tracking-wider`}
+            className={`${batman.className} text-4xl md:text-5xl drop-shadow-blueDrop tracking-wider`}
           >
             OUTCOMES
           </h1>
