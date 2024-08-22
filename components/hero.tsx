@@ -8,7 +8,7 @@ import Logo from "../public/images/techxlogoblack.png";
 import { motion } from "framer-motion";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadFull } from "tsparticles";
-import type { Container, Engine } from "tsparticles-engine";
+import type { Container } from "@tsparticles/engine";
 
 const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
 
@@ -39,7 +39,7 @@ const Hero = () => {
     return () => clearInterval(typingInterval);
   }, []);
 
-  const particlesLoaded = async (container: Container): Promise<void> => {
+  const particlesLoaded = async (container?: Container): Promise<void> => {
     console.log(container);
   };
 
@@ -67,7 +67,9 @@ const Hero = () => {
                   enable: true,
                   mode: "repulse",
                 },
-                resize: true,
+                resize: {
+                  enable: true,
+                },
               },
               modes: {
                 push: {
@@ -103,7 +105,6 @@ const Hero = () => {
               number: {
                 density: {
                   enable: true,
-                  area: 800,
                 },
                 value: 80,
               },
