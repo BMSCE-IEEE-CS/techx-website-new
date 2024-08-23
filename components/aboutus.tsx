@@ -20,7 +20,7 @@ const AboutUs = () => {
       <div className="absolute inset-0 bg-[#f6f9f9] opacity-70"></div>
       <div className="card relative px-6 py-4 text-white flex flex-col bg-gradient-to-br w-11/12 md:w-9/12 mx-auto from-[#08233b] to-[#2288e3]">
         <h1 className="text-4xl md:text-6xl font-semibold text-center">
-          What is TechX Bangalore
+          What is TechX Bangalore?
         </h1>
         <p className="text-justify mt-6">
           <strong>TechX</strong> is a comprehensive event organized by the IEEE
