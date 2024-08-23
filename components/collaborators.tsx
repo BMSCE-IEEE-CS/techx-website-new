@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import Carousel from "./carousel";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import { motion } from "framer-motion";
 import localFont from "next/font/local";
 
@@ -12,7 +10,7 @@ const Collaborators = () => {
   return (
     <div
       id="sponsors"
-      className="relative py-8 px-10 flex flex-col items-center justify-center"
+      className="relative py-8 flex flex-col items-center justify-center"
     >
       <div className="absolute inset-0 bg-gradient-to-b to-[#469be7] from-[#f6f9f9] opacity-80 z-0"></div>
       <motion.div
@@ -24,7 +22,7 @@ const Collaborators = () => {
       >
         <div>
           <h1
-            className={`${batman.className} text-2xl md:text-5xl drop-shadow-blueDrop tracking-wider`}
+            className={`${batman.className} text-2xl text-center md:text-5xl drop-shadow-blueDrop tracking-wider`}
           >
             collaborators
           </h1>
@@ -35,9 +33,7 @@ const Collaborators = () => {
             Check out who makes the event possible
           </p>
         </div>
-        <div className="w-full">
-          <Carousel />
-        </div>
+        <Carousel />
       </motion.div>
     </div>
   );

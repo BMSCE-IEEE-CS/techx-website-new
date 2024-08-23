@@ -9,16 +9,18 @@ import { FaCalendarAlt } from "react-icons/fa";
 
 const AboutUs = () => {
   return (
-    <motion.div
+    <div
       id="about"
       className="w-full mx-auto relative flex flex-col items-center justify-center"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: true }}
     >
       <div className="absolute inset-0 bg-[#f6f9f9] opacity-70"></div>
-      <div className="card relative px-6 py-4 text-white flex flex-col bg-gradient-to-br w-11/12 md:w-9/12 mx-auto from-[#08233b] to-[#2288e3]">
+      <motion.div
+        className="rounded-2xl relative px-6 py-4 text-white flex flex-col bg-gradient-to-br w-11/12 md:w-9/12 mx-auto from-[#08233b] to-[#2288e3]"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
         <h1 className="text-4xl md:text-6xl font-semibold text-center">
           What is TechX Bangalore?
         </h1>
@@ -37,7 +39,7 @@ const AboutUs = () => {
           Engage, Unique&quot; motto, TechX aims to cultivate well-rounded tech
           leaders of tomorrow by providing a holistic learning experience.
         </p>
-        <div className="card-actions flex flex-col mt-6">
+        <div className="flex flex-col mt-10">
           <p className="flex items-center mb-4">
             <span className="mr-3">
               <FaCalendarAlt size={25} />
@@ -51,8 +53,8 @@ const AboutUs = () => {
             Bengaluru, India
           </p>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

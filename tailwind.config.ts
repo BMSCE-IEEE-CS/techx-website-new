@@ -12,6 +12,15 @@ const config: Config = {
         background: "#353535",
         mBlue: "#1560a3",
       },
+      animation: {
+        "infinite-scroll": "scroll 30s linear infinite",
+      },
+      keyframes: {
+        scroll: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
+      },
       backgroundImage: {
         hero: "url(/images/techx.png)",
       },
@@ -23,6 +32,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [],
 };
 export default config;

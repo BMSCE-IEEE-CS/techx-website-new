@@ -35,10 +35,6 @@ const ParticlesBg = () => {
             fpsLimit: 200,
             interactivity: {
               events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
                 onHover: {
                   enable: true,
                   mode: "repulse",
@@ -48,9 +44,6 @@ const ParticlesBg = () => {
                 },
               },
               modes: {
-                push: {
-                  quantity: 4,
-                },
                 repulse: {
                   distance: 200,
                   duration: 0.4,
@@ -63,7 +56,7 @@ const ParticlesBg = () => {
               },
               links: {
                 color: "#1560a3",
-                distance: 150,
+                distance: 200,
                 enable: true,
                 opacity: 0.5,
                 width: 2,
@@ -75,14 +68,14 @@ const ParticlesBg = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 1.3,
+                speed: 1.5,
                 straight: false,
               },
               number: {
                 density: {
                   enable: true,
                 },
-                value: 200,
+                value: 120,
               },
               opacity: {
                 value: 0.5,
