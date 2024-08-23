@@ -32,7 +32,7 @@ const ParticlesBg = () => {
                 value: "transparent",
               },
             },
-            fpsLimit: 120,
+            fpsLimit: 180,
             interactivity: {
               events: {
                 onClick: {

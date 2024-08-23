@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div className="relative">
-      <div className="absolute inset-0 bg-[#469be7] opacity-70"></div>
+      <div className="absolute inset-0 bg-[#2e6bb4] opacity-70"></div>
       <div className="relative">
         <div className="static flex items-center justify-between px-4 py-6 md:px-12 sm:px-2">
           <Link href="/">

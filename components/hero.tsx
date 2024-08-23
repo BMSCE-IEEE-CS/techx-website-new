@@ -31,7 +31,7 @@ const Hero = () => {
 
   return (
     <div className="flex flex-col w-full items-center relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-[#469be7] to-[#f6f9f9] opacity-70 z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-[#2e6bb4] to-[#f6f9f9] opacity-70 z-0"></div>
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -60,7 +60,7 @@ const Hero = () => {
           />
           <div className="relative py-10 flex flex-col items-center justify-center">
             <div className="flex flex-col md:flex-row items-center gap-0 md:gap-4 ">
-              <h1 className="text-2xl">Event Sponsored By:</h1>
+              <h1 className="text-2xl">An Initiative By:</h1>
               <Image
                 src="/images/syplogo512_black2.png"
                 width={300}
