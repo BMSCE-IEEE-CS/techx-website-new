@@ -97,7 +97,7 @@ const OraganizerPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto order-first md:order-none mb-4 md:mb-auto"
-              src="/resized/ieeecucsblack.png"
+              src="/images/ieee-cs-cu-black.png"
               width={200}
               height={200}
               alt="christ university"
