@@ -75,7 +75,7 @@ const ParticlesBg = () => {
                   default: "bounce",
                 },
                 random: false,
-                speed: 2,
+                speed: 1.3,
                 straight: false,
               },
               number: {

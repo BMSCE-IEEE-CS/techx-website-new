@@ -5,7 +5,7 @@ import React from "react";
 
 const Carousel = () => {
   const images = [
-    "/resized/ieee-logo.png",
+    "/resized/ieee-logo-black.png",
     "/resized/ieee-csbc-black.png",
     "/resized/ieee-cs-logo-black.png",
     "/resized/bmsceieeecsblack.png",
