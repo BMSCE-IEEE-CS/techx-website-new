@@ -6,7 +6,6 @@ import React, { useState, useEffect } from "react";
 import Timer from "./Timer";
 import Logo from "../public/images/techxlogoblack.png";
 import { motion } from "framer-motion";
-import ParticlesBg from "./particles";
 
 const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
 
@@ -33,8 +32,13 @@ const Hero = () => {
   return (
     <div className="flex flex-col w-full items-center relative">
       <div className="absolute inset-0 bg-gradient-to-b from-[#469be7] to-[#f6f9f9] opacity-70 z-0"></div>
-      {/* <ParticlesBg /> */}
-      <div className="flex flex-col items-center w-full flex-grow relative z-10">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="flex flex-col items-center w-full flex-grow relative"
+      >
         <div className="flex flex-col mt-52 w-full px-4">
           <div className="text-center mb-10 w-full md:w-max mx-auto">
             <h2
@@ -50,17 +54,11 @@ const Hero = () => {
             <Timer />
           </div>
           <Image
-            className="w-full md:w-3/4 mx-auto lg:w-1/2"
+            className="w-full md:w-3/4 mx-auto lg:w-1/3"
             src={Logo}
             alt="TechX Logo"
           />
-          <motion.div
-            className="relative py-10 flex flex-col items-center justify-center"
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1 }}
-            viewport={{ once: true }}
-          >
+          <div className="relative py-10 flex flex-col items-center justify-center">
             <div className="flex flex-col md:flex-row items-center gap-0 md:gap-4 ">
               <h1 className="text-2xl">Event Sponsored By:</h1>
               <Image
@@ -70,9 +68,9 @@ const Hero = () => {
                 alt="syp logo"
               />
             </div>
-          </motion.div>
+          </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

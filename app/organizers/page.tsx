@@ -1,3 +1,6 @@
+"use client";
+
+import ParticlesBg from "@/components/particles";
 import { organizers } from "@/utils/data";
 import localFont from "next/font/local";
 import Image from "next/image";
@@ -9,8 +12,10 @@ const batman = localFont({ src: "../../app/batmfa__.ttf" });
 
 const OraganizerPage = () => {
   return (
-    <div className="w-full">
-      <div className="flex flex-col items-start mx-6">
+    <div className="w-full relative">
+      <ParticlesBg />
+      <div className="absolute inset-0 bg-[#f6f9f9] opacity-70 z-0"></div>
+      <div className="flex flex-col items-start mx-6 relative z-10">
         <Link
           className="flex items-center gap-2 m-4 text-xl font-bold text-white bg-mBlue px-4 py-2 rounded-xl"
           href="/"
@@ -19,25 +24,25 @@ const OraganizerPage = () => {
           <p>Back</p>
         </Link>
         <h1
-          className={`${batman.className} text-4xl md:text-6xl drop-shadow-blueDrop text-center w-full`}
+          className={`${batman.className} text-4xl md:text-6xl drop-shadow-blueDrop text-center w-full mt-4`}
         >
           Organizers
         </h1>
         {/* BMSCE Section */}
         <div className="flex flex-col w-full mt-10">
-          <h1 className="text-4xl font-bold text-mBlue text-center mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-mBlue text-center mb-4">
             BMSCE IEEE Computer Society
           </h1>
           <br />
           <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto mb-4 md:mb-auto"
-              src="/images/bmsce-ieee-cs.png"
+              src="/images/bmsceieeecsblack.png"
               width={200}
               height={200}
               alt="bmsce cs"
             />
-            <h2 className="my-auto text-justify text-xl">
+            <h2 className="my-auto text-justify text-xl w-3/4 mx-auto md:mr-auto">
               The BMSCE IEEE Computer Society is a premier source of information
               and collaboration in computer science and engineering, connecting
               members worldwide. It provides access to international
@@ -51,7 +56,7 @@ const OraganizerPage = () => {
           <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-gray-400" />
           <div className="divide-x-2 divide-y-2"></div>
           <div className="">
-            <h1 className="text-4xl font-bold text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-center">
               Executive Committee
             </h1>
             <br /> <br />
@@ -68,7 +73,7 @@ const OraganizerPage = () => {
           </div>
           <br /> <br />
           <div className="mt-4">
-            <h2 className="text-4xl font-bold text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-center">
               Student Activity Committee Coordinators
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
@@ -85,19 +90,19 @@ const OraganizerPage = () => {
         <br />{" "}
         <hr className="my-8 border-t-0 h-[1px] w-full md:w-full mx-auto bg-gray-400" />
         <div className="flex flex-col w-full mt-10">
-          <h1 className="text-4xl font-bold text-mBlue text-center mb-4">
+          <h1 className="text-2xl md:text-4xl font-bold text-mBlue text-center mb-4">
             Christ University IEEE Computer Society
           </h1>
           <br />
           <div className="grid grid-cols-1 md:grid-cols-2 w-full">
             <Image
               className="w-full md:w-1/2 m-auto order-first md:order-none mb-4 md:mb-auto"
-              src="/images/ieee-cs-cu.png"
+              src="/resized/ieeecucsblack.png"
               width={200}
               height={200}
               alt="christ university"
             />
-            <h2 className="my-auto text-justify text-xl">
+            <h2 className="my-auto text-justify text-xl w-3/4 mx-auto md:mr-auto">
               The IEEE Computer Society Christ University - Bangalore Student
               Branch Chapter is a student chapter of the IEEE Computer Society,
               dedicated to advancing education and research in computer science
@@ -109,11 +114,11 @@ const OraganizerPage = () => {
           </div>
           <hr className="my-8 border-t-0 h-[3px] w-full md:w-3/4 mx-auto bg-gray-400" />
           <div className="">
-            <h1 className="text-4xl font-bold text-center">
+            <h1 className="text-3xl md:text-4xl font-bold text-center">
               Executive Committee
             </h1>
             <br /> <br />
-            <h1 className="text-4xl font-bold text-center">CORE</h1>
+            <h1 className="text-3xl md:text-4xl font-bold text-center">CORE</h1>
             <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
               {organizers.christuni.core.map((name, idx) => (
                 <div key={idx}>

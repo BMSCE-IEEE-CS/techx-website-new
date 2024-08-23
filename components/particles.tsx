@@ -66,7 +66,7 @@ const ParticlesBg = () => {
                 distance: 150,
                 enable: true,
                 opacity: 0.5,
-                width: 1,
+                width: 2,
               },
               move: {
                 direction: "none",
@@ -82,7 +82,7 @@ const ParticlesBg = () => {
                 density: {
                   enable: true,
                 },
-                value: 250,
+                value: 200,
               },
               opacity: {
                 value: 0.5,

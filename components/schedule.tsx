@@ -20,16 +20,18 @@ const Schedule = () => {
   };
 
   return (
-    <motion.div
+    <div
       id="schedule"
       className="w-full mx-auto flex flex-col space-y-4 py-20 items-center justify-center relative"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.5 }}
-      viewport={{ once: true }}
     >
       <div className="absolute inset-0 bg-gradient-to-b from-[#469be7] via-[#f6f9f9] to-[#f6f9f9] opacity-70"></div>
-      <div className="relative flex flex-col items-center">
+      <motion.div
+        className="relative flex flex-col items-center"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5 }}
+        viewport={{ once: true }}
+      >
         <h1
           className={`${batman.className} text-4xl md:text-5xl drop-shadow-blueDrop`}
         >
@@ -44,7 +46,7 @@ const Schedule = () => {
             onClick={() => setDay(0)}
             className={`${
               spacex.className
-            } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
+            } border-2 border-mBlue px-3 py-1 m-1 font-bold text-base sm:px-4 sm:py-2 sm:text-lg ${
               day === 0 ? "bg-mBlue text-white" : ""
             }`}
           >
@@ -56,7 +58,7 @@ const Schedule = () => {
               onClick={() => setDay(1)}
               className={`${
                 spacex.className
-              } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
+              } border-2 border-mBlue px-3 py-1 m-1 font-bold text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
                 day === 1 ? "bg-mBlue text-white" : ""
               }`}
             >
@@ -66,7 +68,7 @@ const Schedule = () => {
               onClick={() => setDay(2)}
               className={`${
                 spacex.className
-              } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg ${
+              } border-2 border-mBlue px-3 py-1 m-1 font-bold text-base sm:px-4 sm:py-2 sm:text-lg ${
                 day === 2 ? "bg-mBlue text-white" : ""
               }`}
             >
@@ -76,7 +78,7 @@ const Schedule = () => {
               onClick={() => setDay(3)}
               className={`${
                 spacex.className
-              } border-2 border-mBlue px-3 py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
+              } border-2 border-mBlue px-3 font-bold py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
                 day === 3 ? "bg-mBlue text-white" : ""
               }`}
             >
@@ -86,14 +88,14 @@ const Schedule = () => {
         </div>
 
         <div className="w-full max-w-4xl mx-auto px-4 mt-8">
-          <h1 className="text-xl md:text-2xl text-center">
+          <h1 className="text-xl text-center">
             <span className="text-mBlue mr-2 font-bold">Venue:</span>
             {day === 0
               ? "Christ (Deemed to be University), Kengeri Campus"
               : "B. M. S. College Of Engineering"}
           </h1>
 
-          <h1 className="text-xl md:text-2xl text-center mt-4 mb-8">
+          <h1 className="text-xl text-center mt-4 mb-8">
             <span className="text-mBlue mr-2 font-bold">Date:</span>
             {day === 0
               ? "September 9th, 2024 and September 18th, 2024"
@@ -132,8 +134,8 @@ const Schedule = () => {
             ))}
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

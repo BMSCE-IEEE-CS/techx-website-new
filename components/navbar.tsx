@@ -20,8 +20,8 @@ const Navbar = () => {
           <Link href="/">
             <Image
               src="/images/techxlogoblack.png"
-              width={200}
-              height={200}
+              width={256}
+              height={256}
               alt="logo black"
             />
           </Link>
@@ -81,7 +81,7 @@ const Navbar = () => {
               )}
             </button>
           </div>
-          <div className="hidden md:block">
+          <div className="hidden md:hidden lg:block">
             <Link
               href="https://web.ticketdude.app/e/81"
               className="bg-mBlue px-4 text-lg py-2 border-4 text-white hover:text-black border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"

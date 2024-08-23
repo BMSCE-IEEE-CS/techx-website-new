@@ -30,8 +30,8 @@ const Why = () => {
             <div className="relative border-2 border-mBlue rounded-2xl">
               <div className="absolute rounded-xl inset-0 bg-[#2288e3] opacity-50"></div>
               <div className="relative flex flex-col items-center px-6 py-4">
-                <FaLightbulb size={60} />
-                <h1 className="text-2xl font-semibold text-center mt-8 text-white">
+                <FaLightbulb size={60} className="drop-shadow-blueDrop" />
+                <h1 className="text-3xl font-semibold text-center mt-8 text-white">
                   Technical Sessions
                 </h1>
                 <p className="text-xl mt-2 text-justify">
@@ -43,8 +43,8 @@ const Why = () => {
             <div className="relative border-2 border-mBlue rounded-2xl">
               <div className="absolute rounded-xl inset-0 bg-[#2288e3] opacity-50"></div>
               <div className="relative flex flex-col items-center px-6 py-4">
-                <FaWrench size={60} />
-                <h1 className="text-2xl font-semibold text-center mt-8 text-white">
+                <FaWrench size={60} className="drop-shadow-blueDrop" />
+                <h1 className="text-3xl font-semibold text-center mt-8 text-white">
                   Hands-On Workshops
                 </h1>
                 <p className="text-xl mt-2 text-justify">
@@ -56,8 +56,8 @@ const Why = () => {
             <div className="relative border-2 border-mBlue rounded-2xl">
               <div className="absolute rounded-xl inset-0 bg-[#2288e3] opacity-50"></div>
               <div className="relative flex flex-col items-center px-6 py-4">
-                <IoChatbubbles size={60} />
-                <h1 className="text-2xl font-semibold text-center mt-8 text-white">
+                <IoChatbubbles size={60} className="drop-shadow-blueDrop" />
+                <h1 className="text-3xl font-semibold text-center mt-8 text-white">
                   Expert Insights
                 </h1>
                 <p className="text-xl mt-2 text-justify">
@@ -69,8 +69,8 @@ const Why = () => {
             <div className="relative border-2 border-mBlue rounded-2xl">
               <div className="absolute rounded-xl inset-0 bg-[#2288e3] opacity-50"></div>
               <div className="relative flex flex-col items-center px-6 py-4">
-                <FaTrophy size={60} />
-                <h1 className="text-2xl font-semibold text-center mt-8 text-white">
+                <FaTrophy size={60} className="drop-shadow-blueDrop" />
+                <h1 className="text-3xl font-semibold text-center mt-8 text-white">
                   Prizes & Networking
                 </h1>
                 <p className="text-xl mt-2 text-justify">
