@@ -46,7 +46,7 @@ const Schedule = () => {
             onClick={() => setDay(0)}
             className={`${
               spacex.className
-            } border-2 border-mBlue px-3 py-1 m-1 font-bold text-base sm:px-4 sm:py-2 sm:text-lg ${
+            } border-2 border-mBlue px-3 py-1 m-1 font-bold text-sm sm:px-4 sm:py-2 sm:text-lg ${
               day === 0 ? "bg-mBlue text-white" : ""
             }`}
           >
@@ -58,7 +58,7 @@ const Schedule = () => {
               onClick={() => setDay(1)}
               className={`${
                 spacex.className
-              } border-2 border-mBlue px-3 py-1 m-1 font-bold text-base sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
+              } border-2 border-mBlue px-3 py-1 m-1 font-bold text-sm sm:px-4 sm:py-2 sm:text-lg rounded-l-full ${
                 day === 1 ? "bg-mBlue text-white" : ""
               }`}
             >
@@ -68,7 +68,7 @@ const Schedule = () => {
               onClick={() => setDay(2)}
               className={`${
                 spacex.className
-              } border-2 border-mBlue px-3 py-1 m-1 font-bold text-base sm:px-4 sm:py-2 sm:text-lg ${
+              } border-2 border-mBlue px-3 py-1 m-1 font-bold text-sm sm:px-4 sm:py-2 sm:text-lg ${
                 day === 2 ? "bg-mBlue text-white" : ""
               }`}
             >
@@ -78,7 +78,7 @@ const Schedule = () => {
               onClick={() => setDay(3)}
               className={`${
                 spacex.className
-              } border-2 border-mBlue px-3 font-bold py-1 m-1 text-base sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
+              } border-2 border-mBlue px-3 font-bold py-1 m-1 text-sm sm:px-4 sm:py-2 sm:text-lg rounded-r-full ${
                 day === 3 ? "bg-mBlue text-white" : ""
               }`}
             >

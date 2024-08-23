@@ -9,17 +9,14 @@ const batman = localFont({ src: "../app/batmfa__.ttf" });
 
 const Pricing = () => {
   return (
-    <motion.div
-      className="py-16 relative"
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1.2 }}
-      viewport={{ once: true }}
-    >
+    <div className="py-16 relative" id="pricing">
       <div className="absolute inset-0 bg-[#f6f9f9] opacity-70"></div>
-      <div
-        id="pricing"
+      <motion.div
         className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.2 }}
+        viewport={{ once: true }}
       >
         <div className="text-center mb-12">
           <h1
@@ -182,8 +179,8 @@ const Pricing = () => {
             </div>
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 
