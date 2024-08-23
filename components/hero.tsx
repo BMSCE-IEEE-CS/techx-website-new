@@ -6,9 +6,7 @@ import React, { useState, useEffect } from "react";
 import Timer from "./Timer";
 import Logo from "../public/images/techxlogoblack.png";
 import { motion } from "framer-motion";
-import Particles, { initParticlesEngine } from "@tsparticles/react";
-import { loadFull } from "tsparticles";
-import type { Container } from "@tsparticles/engine";
+import ParticlesBg from "./particles";
 
 const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
 
@@ -16,7 +14,6 @@ const Hero = () => {
   const fullText = "COMING SOON!";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const [init, setInit] = useState(false);
 
   useEffect(() => {
     let currentIndex = 0;
@@ -30,102 +27,16 @@ const Hero = () => {
       }
     }, 200);
 
-    initParticlesEngine(async (engine) => {
-      await loadFull(engine);
-    }).then(() => {
-      setInit(true);
-    });
-
     return () => clearInterval(typingInterval);
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
-  };
-
   return (
-    <div className="flex flex-col px-10 w-full items-center bg-gradient-to-b from-[#7bb8ee] to-[#F0FFFF] relative">
-      {init && (
-        <Particles
-          id="tsparticles"
-          particlesLoaded={particlesLoaded}
-          options={{
-            fullScreen: { enable: false },
-            background: {
-              color: {
-                value: "transparent",
-              },
-            },
-            fpsLimit: 120,
-            interactivity: {
-              events: {
-                onClick: {
-                  enable: true,
-                  mode: "push",
-                },
-                onHover: {
-                  enable: true,
-                  mode: "repulse",
-                },
-                resize: {
-                  enable: true,
-                },
-              },
-              modes: {
-                push: {
-                  quantity: 4,
-                },
-                repulse: {
-                  distance: 200,
-                  duration: 0.4,
-                },
-              },
-            },
-            particles: {
-              color: {
-                value: "#0a2d4c",
-              },
-              links: {
-                color: "#1560a3",
-                distance: 150,
-                enable: true,
-                opacity: 0.5,
-                width: 1,
-              },
-              move: {
-                direction: "none",
-                enable: true,
-                outModes: {
-                  default: "bounce",
-                },
-                random: false,
-                speed: 2,
-                straight: false,
-              },
-              number: {
-                density: {
-                  enable: true,
-                },
-                value: 250,
-              },
-              opacity: {
-                value: 0.5,
-              },
-              shape: {
-                type: "circle",
-              },
-              size: {
-                value: { min: 1, max: 5 },
-              },
-            },
-            detectRetina: true,
-          }}
-          className="absolute inset-0"
-        />
-      )}
-      <div className="flex flex-col items-center flex-grow relative z-10">
-        <div className="flex flex-col mt-52 max-w-full px-4">
-          <div className="text-center mb-10">
+    <div className="flex flex-col w-full items-center relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-[#469be7] to-[#f6f9f9] opacity-70 z-0"></div>
+      {/* <ParticlesBg /> */}
+      <div className="flex flex-col items-center w-full flex-grow relative z-10">
+        <div className="flex flex-col mt-52 w-full px-4">
+          <div className="text-center mb-10 w-full md:w-max mx-auto">
             <h2
               className={`${nexa.className} text-2xl md:text-3xl text-slate-900 font-bold -mt-32 tracking-wider relative`}
             >
@@ -138,11 +49,11 @@ const Hero = () => {
             </h2>
             <Timer />
           </div>
-          <div className="mt-5 text-center flex justify-center">
-            <div className="relative w-[400px] h-[150px] md:w-[550px] md:h-[150px]">
-              <Image src={Logo} alt="TechX Logo" />
-            </div>
-          </div>
+          <Image
+            className="w-full md:w-3/4 mx-auto lg:w-1/2"
+            src={Logo}
+            alt="TechX Logo"
+          />
           <motion.div
             className="relative py-10 flex flex-col items-center justify-center"
             initial={{ opacity: 0, y: 50 }}
@@ -150,7 +61,7 @@ const Hero = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
           >
-            <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="flex flex-col md:flex-row items-center gap-0 md:gap-4 ">
               <h1 className="text-2xl">Event Sponsored By:</h1>
               <Image
                 src="/images/syplogo512_black2.png"

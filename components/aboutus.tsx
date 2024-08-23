@@ -7,30 +7,28 @@ import { motion } from "framer-motion";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaCalendarAlt } from "react-icons/fa";
 
-const spacex = localFont({ src: "../app/SpaceX.ttf" });
-
 const AboutUs = () => {
   return (
     <motion.div
       id="about"
-      className="card text-white bg-gradient-to-br w-[90%] md:w-4/5 mx-auto from-[#08233b] to-[#2288e3]"
+      className="w-full mx-auto relative flex flex-col items-center justify-center"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 1 }}
       viewport={{ once: true }}
     >
-      <div className="card-body">
+      <div className="absolute inset-0 bg-[#f6f9f9] opacity-70"></div>
+      <div className="card relative px-6 py-4 text-white flex flex-col bg-gradient-to-br w-11/12 md:w-9/12 mx-auto from-[#08233b] to-[#2288e3]">
         <h1 className="text-4xl md:text-6xl font-semibold text-center">
-          What is <span className={spacex.className}>TechX</span>{" "}
-          <span className="text-2xl md:text-4xl">Bangalore</span>
+          What is TechX Bangalore
         </h1>
-        <p className="text-justify mt-6 font-normal">
+        <p className="text-justify mt-6">
           <strong>TechX</strong> is a comprehensive event organized by the IEEE
           Computer Society Student and Young Professionals community. Jointly
           hosted by{" "}
-          <span style={{ fontWeight: "800" }}>BMSCE IEEE Computer Society</span>{" "}
+          <span style={{ fontWeight: "900" }}>BMSCE IEEE Computer Society</span>{" "}
           and{" "}
-          <span style={{ fontWeight: "800" }}>
+          <span style={{ fontWeight: "900" }}>
             Christ University IEEE Computer Society
           </span>
           , it offers a platform for students to explore emerging technologies,
