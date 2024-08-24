@@ -24,9 +24,9 @@ const Pricing = () => {
           >
             Pricing
           </h1>
-          <p className="mt-4 text-xl text-gray-600 font-mono">
+          {/* <p className="mt-4 text-xl text-gray-600 font-mono">
             Choose Your Plan That Fits You Best
-          </p>
+          </p> */}
         </div>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
