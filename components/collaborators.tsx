@@ -12,7 +12,7 @@ const Collaborators = () => {
       id="sponsors"
       className="relative py-8 flex flex-col items-center justify-center"
     >
-      <div className="absolute inset-0 bg-gradient-to-b to-[#469be7] from-[#f6f9f9] opacity-80 z-0"></div>
+    <div className="absolute inset-0 bg-gradient-to-b from-[#f6f9f9] to-[#a0d0f7] opacity-70 z-0"></div>
       <motion.div
         className="relative w-full z-10 flex flex-col items-center mb-4"
         initial={{ opacity: 0, y: 50 }}

@@ -13,6 +13,7 @@ import Navbar from "@/components/navbar";
 import ParticlesBg from "@/components/particles";
 import { Suspense, useEffect, useState } from "react";
 import LoadSpinner from "@/components/loading";
+import ContactUs from "@/components/contactus" 
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -52,6 +53,7 @@ export default function Home() {
           <Schedule />
           <Pricing />
           <Collaborators />
+          <ContactUs />
           <Footer />
         </Suspense>
       </div>
