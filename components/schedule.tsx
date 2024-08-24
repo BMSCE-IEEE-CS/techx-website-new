@@ -109,7 +109,7 @@ const Schedule = () => {
           <div className="space-y-6 border-l-2 border-dashed border-gray-600 pl-6">
             {schedule[getScheduleDay(day)].map((s, id) => (
               <div key={id} className="relative w-full">
-                <div className="absolute z-10 -left-10 top-[0.7px] h-7 w-7 bg-white border-2 border-mBlue rounded-full p-0.5" />
+                <div className="absolute z-10 -left-10 top-[0.5px] h-7 w-7 bg-white border-2 border-mBlue rounded-full p-0.5" />
                 <div className="space-y-2">
                   <h4 className="font-bold text-mBlue text-2xl">{s.name}</h4>
                   <p className="mt-2 text-base text-justify text-black">
