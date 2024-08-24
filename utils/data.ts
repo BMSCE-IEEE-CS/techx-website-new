@@ -258,7 +258,7 @@ export const organizers = {
       "Pranav Kiran Kumar",
       "Rishika Nayana Shakthi",
       "Sahithi Bollempalli",
-      "Tanisha",
+      "Tanisha Prakash",
       "Vageesh G. N.",
     ],
   },
