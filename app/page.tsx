@@ -38,7 +38,9 @@ export default function Home() {
 
   return (
     <div className="flex flex-col bg-[#F0FFFF] relative">
-      <ParticlesBg />
+      <div className="hidden md:block">
+        <ParticlesBg />
+      </div>
       <div className="relative z-10">
         <Suspense fallback={LoadSpinner()}>
           <Navbar />
