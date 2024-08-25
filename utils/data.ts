@@ -243,13 +243,13 @@ export const eventsData = {
 export const organizers = {
   bmsce: {
     core: [
-      "Aneesh K. P.",
-      "Dheemanth G. Athreya",
-      "Manjari M. Joshi",
-      "M. B. Prajwal",
-      "Sanjana Shetty",
-      "Sneha N. Shastri",
-      "Tulasikrishna Tammina",
+      { name: "Dheemanth G Athreya", role: "Chairperson" },
+      { name: "Tulasikrishna Tammina", role: "Vice Chairperson" },
+      { name: "M B Prajwal", role: "Treasurer" },
+      { name: "Manjari M Joshi", role: "Secretary" },
+      { name: "Sanjana Shetty", role: "Joint Secretary" },
+      { name: "Aneesh K P", role: "Technical Lead" },
+      { name: "Sneha N Shastri", role: "Technical Lead" },
     ],
     sac: [
       "Anushree Shetty",
@@ -264,24 +264,14 @@ export const organizers = {
   },
   christuni: {
     core: [
-      "Augadh Verma",
-      "Aaron Probha",
-      "Kevin Johnson",
-      "B Satyam Rao",
-      "Ashley Varghese",
-      "Pranshu Patel",
-      "Arnav Rangwani",
-      "Labh Bothra",
-    ],
-    sac: [
-      "Anushree Shetty",
-      "Nandan M. N.",
-      "Pranati A. P.",
-      "Pranav Kiran Kumar Rao",
-      "Rishika Nayana Shakthi",
-      "Sahithi Bollempalli",
-      "Tanisha Prakash",
-      "Vageesh G. N.",
+      { name: "Augadh Verma", role: "Chairperson" },
+      { name: "Aaron Probha", role: "Vice Chairperson" },
+      { name: "B Satyam Rao", role: "Treasurer" },
+      { name: "Kevin Johnson", role: "Secretary" },
+      { name: "Pranshu Patel", role: "Assistant Secretary" },
+      { name: "Ashley Varghese", role: "Web Master" },
+      { name: "Labh Bothra", role: "Assistant Web Master" },
+      { name: "Arnav Rangwani", role: "Assistant Web Master" },
     ],
   },
 };

@@ -63,12 +63,11 @@ const OraganizerPage = () => {
               </h1>
               <br /> <br />
               <h2 className="text-4xl font-bold text-center">CORE</h2>
-              <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
-                {organizers.bmsce.core.map((name, idx) => (
-                  <div key={idx}>
-                    <p className="text-xl font-semibold my-4 text-center">
-                      {name}
-                    </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                {organizers.bmsce.core.map((person, idx) => (
+                  <div key={idx} className="text-center">
+                    <p className="text-xl font-semibold">{person.name}</p>
+                    <p className="text-sm text-gray-600 mt-1">{person.role}</p>
                   </div>
                 ))}
               </div>
@@ -123,29 +122,15 @@ const OraganizerPage = () => {
               <h1 className="text-3xl md:text-4xl font-bold text-center">
                 CORE
               </h1>
-              <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
-                {organizers.christuni.core.map((name, idx) => (
-                  <div key={idx}>
-                    <p className="text-xl font-semibold my-4 text-center">
-                      {name}
-                    </p>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+                {organizers.christuni.core.map((person, idx) => (
+                  <div key={idx} className="text-center">
+                    <p className="text-xl font-semibold">{person.name}</p>
+                    <p className="text-sm text-gray-600 mt-1">{person.role}</p>
                   </div>
                 ))}
               </div>
             </div>
-
-            {/* <div className="mt-4">
-            <h1 className="text-4xl font-bold text-center">Student Activity Committee Coordinators</h1>
-            <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
-              {organizers.christuni.sac.map((name, idx) => (
-                <div key={idx}>
-                  <p className="text-xl font-semibold my-4 text-center">
-                    {name}
-                  </p>
-                </div>
-              ))}
-            </div>
-          </div> */}
           </div>
           <Link
             className="text-center w-max mx-auto m-4 text-xl font-bold text-white bg-mBlue px-6 py-4 mt-10 rounded-xl"
