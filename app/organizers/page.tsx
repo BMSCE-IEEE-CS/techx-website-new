@@ -62,6 +62,14 @@ const OraganizerPage = () => {
                 Executive Committee
               </h1>
               <br /> <br />
+              <h2 className="text-4xl font-bold text-center">Chapter Advisor</h2>
+              <div className="flex flex-col my-12">
+                {organizers.bmsce.chapter_advisor.map((name, idx) => (
+                  <div key={idx} className="text-center">
+                    <p className="text-xl font-semibold text-center">{name}</p>
+                  </div>
+                ))}
+              </div>
               <h2 className="text-4xl font-bold text-center">CORE</h2>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
                 {organizers.bmsce.core.map((person, idx) => (
@@ -119,6 +127,14 @@ const OraganizerPage = () => {
                 Executive Committee
               </h1>
               <br /> <br />
+              <h2 className="text-4xl font-bold text-center">Chapter Advisor</h2>
+              <div className="flex flex-col my-12">
+                {organizers.christuni.chapter_advisor.map((name, idx) => (
+                  <div key={idx} className="text-center">
+                    <p className="text-xl font-semibold text-center">{name}</p>
+                  </div>
+                ))}
+              </div>
               <h1 className="text-3xl md:text-4xl font-bold text-center">
                 CORE
               </h1>

@@ -242,6 +242,9 @@ export const eventsData = {
 
 export const organizers = {
   bmsce: {
+    chapter_advisor: [
+      "Dr. Sandeep Varma N"
+    ],
     core: [
       { name: "Dheemanth G Athreya", role: "Chairperson" },
       { name: "Tulasikrishna Tammina", role: "Vice Chairperson" },
@@ -263,6 +266,9 @@ export const organizers = {
     ],
   },
   christuni: {
+    chapter_advisor: [
+      "Dr. Sandeep Kumar Poonia"
+    ],
     core: [
       { name: "Augadh Verma", role: "Chairperson" },
       { name: "Aaron Probha", role: "Vice Chairperson" },
