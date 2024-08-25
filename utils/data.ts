@@ -256,13 +256,13 @@ export const organizers = {
     ],
     sac: [
       "Anushree Shetty",
-      "Nandan M. N.",
-      "Pranati A. P.",
+      "Nandan M N",
+      "Pranati A P",
       "Pranav Kiran Kumar",
       "Rishika Nayana Shakthi",
       "Sahithi Bollempalli",
       "Tanisha Prakash",
-      "Vageesh G. N.",
+      "Vageesh G N",
     ],
   },
   christuni: {
