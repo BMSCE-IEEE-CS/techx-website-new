@@ -35,6 +35,10 @@ const ParticlesBg = () => {
             fpsLimit: 200,
             interactivity: {
               events: {
+                onClick: {
+                  enable: true,
+                  mode: "push",
+                },
                 onHover: {
                   enable: true,
                   mode: "repulse",
@@ -44,6 +48,9 @@ const ParticlesBg = () => {
                 },
               },
               modes: {
+                push: {
+                  quantity: 4,
+                },
                 repulse: {
                   distance: 200,
                   duration: 0.4,
@@ -75,7 +82,7 @@ const ParticlesBg = () => {
                 density: {
                   enable: true,
                 },
-                value: 120,
+                value: 150,
               },
               opacity: {
                 value: 0.5,
