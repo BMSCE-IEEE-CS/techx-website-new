@@ -178,7 +178,7 @@ const Pricing = () => {
               </div> */}
             </div>
           </div>
-        </div> <br />
+        </div> <br /> <br />
         {/* <h3 className="text-2xl font-bold text-black text-center">
             Join the WhatsApp group below for further updates!
         </h3> <br /> */}
