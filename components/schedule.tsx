@@ -91,7 +91,7 @@ const Schedule = () => {
             <span className="text-mBlue mr-2 font-bold">Venue:</span>
             {day === 0 || day === 1
               ? "Christ (Deemed to be University), Kengeri Campus"
-              : "B. M. S. College Of Engineering"}
+              : "B.M.S. College Of Engineering"}
           </h1>
 
           <h1 className="text-xl text-center mt-4 mb-8">

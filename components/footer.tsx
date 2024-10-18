@@ -38,7 +38,7 @@ const Footer: React.FC = () => {
               </div>
             </div>
             <p className="mt-2 w-90 sm:w-full md:w-90 lg:w-90 xl:w-80 select-none">
-              TechX is an IEEE CS event designed for students and young
+              TechX is an IEEE Computer Society event designed for students and young
               professionals. It focuses on new technologies and offers various
               sessions, including technical demonstrations, talks on emerging
               technologies, and interactions with industry experts. TechX also
