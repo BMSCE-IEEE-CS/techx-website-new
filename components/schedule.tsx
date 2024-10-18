@@ -4,7 +4,6 @@ import { schedule } from "@/utils/data";
 import localFont from "next/font/local";
 import React, { useState } from "react";
 import { FaRegClock } from "react-icons/fa6";
-import { MdPerson } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
