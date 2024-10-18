@@ -187,7 +187,7 @@ const Pricing = () => {
           <a
             href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
             target="_blank"
-            className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+            className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black hover:border-black border-2 transition-all duration-500"
           >
             Click here to join the WhatsApp group for further updates!
           </a>
