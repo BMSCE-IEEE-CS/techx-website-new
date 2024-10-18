@@ -19,7 +19,7 @@ const Navbar = () => {
         <div className="static flex items-center justify-between px-4 py-6 md:px-12 sm:px-2">
           <Link href="/">
             <Image
-              src="/images/techxlogoblack.png"
+              src="/images/techxnewlogo.png"
               width={256}
               height={256}
               alt="logo black"

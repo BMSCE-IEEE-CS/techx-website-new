@@ -1,7 +1,7 @@
 import React from "react";
 import localFont from "next/font/local";
 import Image from "next/image";
-import Logo from "../public/images/techxlogo.png";
+import Logo from "../public/images/techxwhitelogo.png";
 import {
   FaFacebookF,
   FaInstagram,

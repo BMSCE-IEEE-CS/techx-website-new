@@ -4,7 +4,7 @@ import localFont from "next/font/local";
 import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import Timer from "./Timer";
-import Logo from "../public/images/techxlogoblack.png";
+import Logo from "../public/images/techxnewlogo.png";
 import { motion } from "framer-motion";
 
 const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
