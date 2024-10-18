@@ -30,7 +30,7 @@ const Pricing = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300 pb-0">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
                 IEEE Computer Society Members
@@ -66,7 +66,7 @@ const Pricing = () => {
                 <span>Certificate of Participation</span>
               </li>
             </ul>
-            <div className="mt-auto">
+            {/* <div className="mt-auto">
               <a
                 href="https://web.ticketdude.app/e/81"
                 target="_blank"
@@ -74,7 +74,7 @@ const Pricing = () => {
               >
                 Get Ticket
               </a>
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
@@ -116,7 +116,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              <div className="mt-auto">
+              {/* <div className="mt-auto">
                 <a
                   href="https://web.ticketdude.app/e/81"
                   target="_blank"
@@ -124,7 +124,7 @@ const Pricing = () => {
                 >
                   Get Ticket
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -167,7 +167,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              <div className="mt-auto">
+              {/* <div className="mt-auto">
                 <a
                   href="https://web.ticketdude.app/e/81"
                   target="_blank"
@@ -175,9 +175,22 @@ const Pricing = () => {
                 >
                   Get Ticket
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
+        </div> <br />
+        {/* <h3 className="text-2xl font-bold text-black text-center">
+            Join the WhatsApp group below for further updates!
+        </h3> <br /> */}
+        {/* <a href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF">Click here</a> */}
+        <div className="mt-auto w-[90%] md:w-[56%] mx-auto">
+          <a
+            href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
+            target="_blank"
+            className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+          >
+            Click here to join the WhatsApp group for further updates!
+          </a>
         </div>
       </motion.div>
     </div>
