@@ -72,7 +72,7 @@ const Pricing = () => {
                 target="_blank"
                 className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
               >
-                Get Ticket
+                Register Now!
               </Link>
             </div>
           </div>
@@ -122,7 +122,7 @@ const Pricing = () => {
                   target="_blank"
                   className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
                 >
-                  Get Ticket
+                  Register Now!
                 </Link>
               </div>
             </div>
@@ -173,7 +173,7 @@ const Pricing = () => {
                   target="_blank"
                   className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
                 >
-                  Get Ticket
+                  Register Now!
                 </Link>
               </div>
             </div>
