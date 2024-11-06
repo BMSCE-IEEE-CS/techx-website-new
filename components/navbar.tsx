@@ -46,15 +46,15 @@ const Navbar = () => {
             </Link>
             <Link
               className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
-              href="#sponsors"
-            >
-              Collaborators
-            </Link>
-            <Link
-              className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
               href="#pricing"
             >
               Pricing Plan
+            </Link>
+            <Link
+              className="p-0.5 border-b-4 border-transparent font-bold text-xl hover:border-mBlue  transition-all duration-150 ease-in"
+              href="#sponsors"
+            >
+              Collaborators
             </Link>
           </div>
           <div className="md:hidden flex items-center gap-2">
@@ -83,12 +83,12 @@ const Navbar = () => {
           </div>
           <div className="hidden md:hidden lg:block">
             <Link
-              href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
+              href="https://forms.gle/44BsGT8gmosNiXum8"
               className="bg-mBlue px-4 text-lg py-2 border-4 text-white hover:text-black border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
               passHref
               target="_blank"
             >
-              Stay Updated
+              Register Now
             </Link>
           </div>
         </div>
@@ -115,23 +115,23 @@ const Navbar = () => {
               </Link>
               <Link
                 className="p-2  rounded-xl transition-all duration-150 ease-in"
-                href="#sponsors"
-              >
-                Collaborators
-              </Link>
-              <Link
-                className="p-2  rounded-xl transition-all duration-150 ease-in"
                 href="#pricing"
               >
                 Pricing Plan
               </Link>
               <Link
-                href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
+                className="p-2  rounded-xl transition-all duration-150 ease-in"
+                href="#sponsors"
+              >
+                Collaborators
+              </Link>
+              <Link
+                href="https://forms.gle/44BsGT8gmosNiXum8"
                 className="bg-mBlue px-4 text-lg py-2 border-4  border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
                 passHref
                 target="_blank"
               >
-                Stay Updated
+                Register Now
               </Link>
             </div>
           </div>
