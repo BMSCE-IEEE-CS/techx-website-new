@@ -44,7 +44,7 @@ const AboutUs = () => {
             <span className="mr-3">
               <FaCalendarAlt size={25} />
             </span>
-            22nd, 23rd, and 24th November, 2024
+            29th - 30th November, 2024 and 1st December, 2024 
           </p>
           <p className="flex items-center">
             <span className="mr-3">

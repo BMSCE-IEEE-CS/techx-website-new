@@ -97,12 +97,12 @@ const Schedule = () => {
           <h1 className="text-xl text-center mt-4 mb-8">
             <span className="text-mBlue mr-2 font-bold">Date:</span>
             {day === 0
-              ? "November 15th, 2024"
-              : day === 1
               ? "November 22nd, 2024"
+              : day === 1
+              ? "November 29th, 2024"
               : day === 2
-              ? "November 23rd, 2024"
-              : "November 24th, 2024"}
+              ? "November 30th, 2024"
+              : "December 1st, 2024"}
           </h1>
 
           <div className="space-y-6 border-l-2 border-dashed border-gray-600 pl-6">
