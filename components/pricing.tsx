@@ -69,7 +69,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              <div className="mt-auto">
+              {/* <div className="mt-auto">
                 <Link
                   href="https://forms.gle/44BsGT8gmosNiXum8"
                   target="_blank"
@@ -77,7 +77,7 @@ const Pricing = () => {
                 >
                   Register Now!
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
           <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
@@ -119,7 +119,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              <div className="mt-auto">
+              {/* <div className="mt-auto">
                 <Link
                   href="https://forms.gle/44BsGT8gmosNiXum8"
                   target="_blank"
@@ -127,7 +127,7 @@ const Pricing = () => {
                 >
                   Register Now!
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
 
@@ -170,7 +170,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              <div className="mt-auto">
+              {/* <div className="mt-auto">
                 <Link
                   href="https://forms.gle/44BsGT8gmosNiXum8"
                   target="_blank"
@@ -178,7 +178,7 @@ const Pricing = () => {
                 >
                   Register Now!
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>{" "}

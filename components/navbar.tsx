@@ -83,12 +83,12 @@ const Navbar = () => {
           </div>
           <div className="hidden md:hidden lg:block">
             <Link
-              href="https://forms.gle/44BsGT8gmosNiXum8"
+              href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
               className="bg-mBlue px-4 text-lg py-2 border-4 text-white hover:text-black border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
               passHref
               target="_blank"
             >
-              Register Now
+              Stay Updated!
             </Link>
           </div>
         </div>
@@ -126,12 +126,12 @@ const Navbar = () => {
                 Collaborators
               </Link>
               <Link
-                href="https://forms.gle/44BsGT8gmosNiXum8"
+                href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
                 className="bg-mBlue px-4 text-lg py-2 border-4  border-mBlue hover:bg-transparent rounded-xl transition-all duration-150 ease-in"
                 passHref
                 target="_blank"
               >
-                Register Now
+                Stay Updated!
               </Link>
             </div>
           </div>
