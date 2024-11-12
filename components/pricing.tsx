@@ -187,6 +187,9 @@ const Pricing = () => {
             Join the WhatsApp group below for further updates!
         </h3> <br /> */}
         {/* <a href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF">Click here</a> */}
+        <h1 className="text-3xl md:text-4xl font-bold text-center">
+                Registrations Opening Soon!
+              </h1> <br /> <br />
         <div className="mt-auto w-[90%] md:w-[56%] mx-auto">
           <Link
             href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
