@@ -62,7 +62,9 @@ const OraganizerPage = () => {
                 Executive Committee
               </h1>
               <br /> <br />
-              <h2 className="text-4xl font-bold text-center">Chapter Advisor</h2>
+              <h2 className="text-4xl font-bold text-center">
+                Chapter Advisor
+              </h2>
               <div className="flex flex-col my-12">
                 {organizers.bmsce.chapter_advisor.map((name, idx) => (
                   <div key={idx} className="text-center">
@@ -127,7 +129,9 @@ const OraganizerPage = () => {
                 Executive Committee
               </h1>
               <br /> <br />
-              <h2 className="text-4xl font-bold text-center">Chapter Advisor</h2>
+              <h2 className="text-4xl font-bold text-center">
+                Chapter Advisor
+              </h2>
               <div className="flex flex-col my-12">
                 {organizers.christuni.chapter_advisor.map((name, idx) => (
                   <div key={idx} className="text-center">
@@ -145,6 +149,21 @@ const OraganizerPage = () => {
                     <p className="text-sm text-gray-600 mt-1">{person.role}</p>
                   </div>
                 ))}
+              </div>
+              <br /> <br />
+              <div className="mt-4">
+                <h2 className="text-3xl md:text-4xl font-bold text-center">
+                  Student Activity Committee Coordinators
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
+                  {organizers.bmsce.sac.map((name, idx) => (
+                    <div key={idx}>
+                      <p className="text-xl font-semibold my-4 text-center">
+                        {name}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
