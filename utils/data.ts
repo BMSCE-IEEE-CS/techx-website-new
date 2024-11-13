@@ -242,9 +242,7 @@ export const eventsData = {
 
 export const organizers = {
   bmsce: {
-    chapter_advisor: [
-      "Dr. Sandeep Varma N"
-    ],
+    chapter_advisor: ["Dr. Sandeep Varma N"],
     core: [
       { name: "Dheemanth G Athreya", role: "Chairperson" },
       { name: "Tulasikrishna Tammina", role: "Vice Chairperson" },
@@ -265,9 +263,7 @@ export const organizers = {
     ],
   },
   christuni: {
-    chapter_advisor: [
-      "Dr. Sandeep Kumar Poonia"
-    ],
+    chapter_advisor: ["Dr. Sandeep Kumar Poonia"],
     core: [
       { name: "Augadh Verma", role: "Chairperson" },
       { name: "Aaron Probha", role: "Vice Chairperson" },
@@ -277,6 +273,17 @@ export const organizers = {
       { name: "Ashley Varghese", role: "Web Master" },
       { name: "Labh Bothra", role: "Assistant Web Master" },
       { name: "Arnav Rangwani", role: "Assistant Web Master" },
+    ],
+    sac: [
+      "Adarsh Ramani",
+      "Yash Kumar Sriwastav",
+      "Mayank",
+      "Priyanshu Bist",
+      "Ishita Singh Faujdar",
+      "Keona",
+      "Aayush Seth",
+      "Sai Sandhyaa B",
+      "Beant Kaur",
     ],
   },
 };
