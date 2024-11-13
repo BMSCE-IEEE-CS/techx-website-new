@@ -156,7 +156,7 @@ const OraganizerPage = () => {
                   Student Activity Committee Coordinators
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-4 mt-4">
-                  {organizers.bmsce.sac.map((name, idx) => (
+                  {organizers.christuni.sac.map((name, idx) => (
                     <div key={idx}>
                       <p className="text-xl font-semibold my-4 text-center">
                         {name}
