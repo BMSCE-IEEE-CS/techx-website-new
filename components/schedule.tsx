@@ -115,10 +115,10 @@ const Schedule = () => {
                     {s.description}
                   </p>
                   <div className="flex items-center gap-2">
-                    <FaRegClock size={20} />
-                    <p className="mt-1 block text-sm font-semibold text-black">
+                    {/* <FaRegClock size={20} /> */}
+                    {/* <p className="mt-1 block text-sm font-semibold text-black">
                       {s.time}
-                    </p>
+                    </p> */}
                   </div>
                 </div>
               </div>
