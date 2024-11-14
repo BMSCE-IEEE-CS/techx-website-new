@@ -39,6 +39,158 @@ const Pricing = () => {
             <div className="flex flex-col flex-grow justify-end">
               <div className="mb-8">
                 <p className="mt-4 text-gray-200 text-[1.2rem] font-bold text-left">
+                  1 Day Pass
+                </p>
+              </div>
+              <div className="mb-8 text-left">
+                <span className="text-5xl font-extrabold text-white">
+                  &#8377;100
+                </span>
+              </div>
+              <ul className="mb-8 space-y-4 text-gray-200">
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>IEEE Goodies</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Lunch</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Snacks and Refreshments</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Entry to all events and competitions</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Certificate of Participation</span>
+                </li>
+              </ul>
+              <div className="mt-auto">
+                <Link
+                  href="https://forms.gle/44BsGT8gmosNiXum8"
+                  target="_blank"
+                  className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+                >
+                  Register Now!
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-white text-center">
+                IEEE Members
+              </h3>
+            </div>
+            <div className="flex flex-col flex-grow justify-end">
+              <div className="mb-8">
+                <p className="mt-4 text-gray-200 text-[1.2rem] font-bold text-left">
+                  1 Day Pass
+                </p>
+              </div>
+              <div className="mb-8 text-left">
+                <span className="text-5xl font-extrabold text-white">
+                  &#8377;150
+                </span>
+              </div>
+              <ul className="mb-8 space-y-4 text-gray-200">
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>IEEE Goodies</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Lunch</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Snacks and Refreshments</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Entry to all events and competitions</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Certificate of Participation</span>
+                </li>
+              </ul>
+              <div className="mt-auto">
+                <Link
+                  href="https://forms.gle/44BsGT8gmosNiXum8"
+                  target="_blank"
+                  className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+                >
+                  Register Now!
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-white text-center">
+                Non-IEEE Members
+              </h3>
+            </div>
+            <div className="flex flex-col flex-grow justify-end">
+              <div className="mb-8">
+                <p className="mt-4 text-gray-200 text-[1.2rem] font-bold">
+                  1 Day Pass
+                </p>
+              </div>
+              <div className="mb-8">
+                <span className="text-5xl font-extrabold text-white">
+                  &#8377;200
+                </span>
+              </div>
+              <ul className="mb-8 space-y-4 text-gray-200">
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>IEEE Goodies</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Lunch</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Snacks and Refreshments</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Entry to all events and competitions</span>
+                </li>
+                <li className="flex items-center gap-2.5 font-medium">
+                  <FaCheckCircle className="text-white" />
+                  <span>Certificate of Participation</span>
+                </li>
+              </ul>
+              <div className="mt-auto">
+                <Link
+                  href="https://forms.gle/44BsGT8gmosNiXum8"
+                  target="_blank"
+                  className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black transition-all duration-500"
+                >
+                  Register Now!
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
+            <div className="mb-8">
+              <h3 className="text-2xl font-bold text-white text-center">
+                IEEE Computer Society Members
+              </h3>
+            </div>
+            <div className="flex flex-col flex-grow justify-end">
+              <div className="mb-8">
+                <p className="mt-4 text-gray-200 text-[1.2rem] font-bold text-left">
                   3 Day Pass
                 </p>
               </div>
@@ -69,7 +221,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              {/* <div className="mt-auto">
+              <div className="mt-auto">
                 <Link
                   href="https://forms.gle/44BsGT8gmosNiXum8"
                   target="_blank"
@@ -77,9 +229,10 @@ const Pricing = () => {
                 >
                   Register Now!
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
+
           <div className="flex flex-col bg-gradient-to-br from-[#08233b] to-[#2288e3] rounded-lg shadow-lg p-6 transform hover:scale-105 transition duration-300">
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-white text-center">
@@ -119,7 +272,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              {/* <div className="mt-auto">
+              <div className="mt-auto">
                 <Link
                   href="https://forms.gle/44BsGT8gmosNiXum8"
                   target="_blank"
@@ -127,7 +280,7 @@ const Pricing = () => {
                 >
                   Register Now!
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
 
@@ -170,7 +323,7 @@ const Pricing = () => {
                   <span>Certificate of Participation</span>
                 </li>
               </ul>
-              {/* <div className="mt-auto">
+              <div className="mt-auto">
                 <Link
                   href="https://forms.gle/44BsGT8gmosNiXum8"
                   target="_blank"
@@ -178,7 +331,7 @@ const Pricing = () => {
                 >
                   Register Now!
                 </Link>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>{" "}
@@ -187,9 +340,6 @@ const Pricing = () => {
             Join the WhatsApp group below for further updates!
         </h3> <br /> */}
         {/* <a href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF">Click here</a> */}
-        <h1 className="text-3xl md:text-4xl font-bold text-center">
-                Registrations Opening Soon!
-              </h1> <br /> <br />
         <div className="mt-auto w-[90%] md:w-[56%] mx-auto">
           <Link
             href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
