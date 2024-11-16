@@ -5,7 +5,7 @@ export const schedule = {
       description:
         "The workshop on DevOps provides an in-depth understanding of the principles and practices that unite software development and IT operations. It covers automation, continuous integration, and deployment strategies for optimising workflow efficiency and ensuring rapid, reliable software delivery.",
       rp: "Resource Person 1",
-      time: "",
+      time: "9:00 AM - 11:00 AM",
       // location: "CHRIST (Deemed to be University), Kengeri Campus",
     },
     {
@@ -13,7 +13,7 @@ export const schedule = {
       description:
         "The Tech Talk on Generative AI delves into the advancements and applications of AI models that can create new content, from text and images to music and code. It explores the underlying technologies, ethical considerations, and potential impact of generative AI across various industries.",
       rp: "Resource Person 2",
-      time: "",
+      time: "11:30 AM - 1:00 PM",
       // location: "CHRIST (Deemed to be University), Kengeri Campus",
     },
   ],
