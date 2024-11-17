@@ -89,7 +89,7 @@ const Schedule = () => {
         <div className="w-full mt-8">
           <h1 className="text-xl text-center">
             <span className="text-mBlue mr-2 font-bold">Venue:</span>
-            {day === 0 || day === 1
+            {day === 0
               ? "Christ (Deemed to be University), Kengeri Campus"
               : "B.M.S. College Of Engineering"}
           </h1>
