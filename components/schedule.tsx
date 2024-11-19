@@ -5,6 +5,7 @@ import localFont from "next/font/local";
 import React, { useState } from "react";
 import { FaRegClock } from "react-icons/fa6";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const spacex = localFont({ src: "../app/SpaceX.ttf" });
 const batman = localFont({ src: "../app/batmfa__.ttf" });
