@@ -124,6 +124,22 @@ const Schedule = () => {
               </div>
             ))}
           </div>
+
+          {day === 0 && (
+            <div className="mt-10 flex flex-col items-center w-full">
+              <Link
+                href="https://docs.google.com/forms/d/e/1FAIpQLSctg9or5-TGJxdeqDloNvizhgIb4hruL74SUff7eNTOPSyuAA/viewform"
+                target="_blank"
+                className={`${
+                  spacex.className
+                } border-2 border-mBlue px-3 py-1 m-1 font-bold text-sm sm:px-4 sm:py-2 sm:text-lg ${
+                  day === 0 ? "bg-mBlue text-white" : ""
+                }`}
+              >
+                Pre-Events Registration
+              </Link>
+            </div>
+          )}
         </div>
       </motion.div>
     </div>
