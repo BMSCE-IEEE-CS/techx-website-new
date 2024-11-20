@@ -55,9 +55,9 @@ export const schedule = {
       location: "BMS College of Engineering",
     },
     {
-      name: "Workshop on Drone Technology (Applications of Computer Science)",
-      description:
-        "This workshop covers drone mechanics, flight principles, and operational safety. Participants will engage in practical sessions to master aerial navigation and aerial photography and explore the regulatory landscape, equipping them to harness drones effectively in various applications.",
+      name: "Interactive Workshop on Computer Vision",
+      // description:
+      //   "This workshop covers drone mechanics, flight principles, and operational safety. Participants will engage in practical sessions to master aerial navigation and aerial photography and explore the regulatory landscape, equipping them to harness drones effectively in various applications.",
       rp: "Resource Person 6",
       time: "2:00 PM - 4:00 PM",
       location: "BMS College of Engineering",
