@@ -56,8 +56,8 @@ export const schedule = {
     },
     {
       name: "Interactive Workshop on Computer Vision",
-      // description:
-      //   "This workshop covers drone mechanics, flight principles, and operational safety. Participants will engage in practical sessions to master aerial navigation and aerial photography and explore the regulatory landscape, equipping them to harness drones effectively in various applications.",
+      description:
+        "This workshop covers the basics of computer vision, including  image processing, object detection, and feature extraction. Participants will gain hands-on experience with tools like OpenCV and TensorFlow. Real-world applications such as facial recognition and autonomous vehicles will also be explored.",
       rp: "Resource Person 6",
       time: "2:00 PM - 4:00 PM",
       location: "BMS College of Engineering",
