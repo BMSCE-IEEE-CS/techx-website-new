@@ -128,7 +128,7 @@ const Schedule = () => {
 
           {day === 0 && (
             <div className="mt-10 flex flex-col items-center w-full">
-              <Link
+              {/* <Link
                 href="https://docs.google.com/forms/d/e/1FAIpQLSctg9or5-TGJxdeqDloNvizhgIb4hruL74SUff7eNTOPSyuAA/viewform"
                 target="_blank"
                 className={`${
@@ -138,7 +138,7 @@ const Schedule = () => {
                 }`}
               >
                 Pre-Events Registration
-              </Link>
+              </Link> */}
             </div>
           )}
         </div>
