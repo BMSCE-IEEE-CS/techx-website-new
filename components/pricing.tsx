@@ -497,13 +497,13 @@ const Pricing = () => {
         </h3> <br /> */}
         {/* <a href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF">Click here</a> */}
         <div className="mt-auto w-[90%] md:w-[56%] mx-auto">
-          <Link
+          {/* <Link
             href="https://chat.whatsapp.com/C9jbQYjVpphEk3VxmfNmWF"
             target="_blank"
             className="block w-full py-3 px-6 text-center rounded-md text-white font-medium bg-black hover:bg-white hover:text-black hover:border-black border-2 transition-all duration-500"
           >
             Click here to join the WhatsApp group for further updates!
-          </Link>
+          </Link> */}
         </div>
       </motion.div>
     </div>
