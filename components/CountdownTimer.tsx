@@ -1,15 +1,18 @@
-'use client'
+"use client";
 
 import { useState, useEffect } from "react";
 
 const useCountdown = (targetDate: string) => {
   const countDownDate = new Date(targetDate).getTime();
 
-  const [countDown, setCountDown] = useState(countDownDate - new Date().getTime());
+  const [countDown, setCountDown] = useState(
+    Math.max(countDownDate - new Date().getTime(), 0)
+  );
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCountDown(countDownDate - new Date().getTime());
+      const newCountDown = countDownDate - new Date().getTime();
+      setCountDown(Math.max(newCountDown, 0));
     }, 1000);
 
     return () => clearInterval(interval);
@@ -20,7 +23,9 @@ const useCountdown = (targetDate: string) => {
 
 const getReturnValues = (countDown: number) => {
   const days = Math.floor(countDown / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const hours = Math.floor(
+    (countDown % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
   const minutes = Math.floor((countDown % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((countDown % (1000 * 60)) / 1000);
 
