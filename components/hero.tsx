@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const nexa = localFont({ src: "../app/Nexa-Heavy.ttf" });
 
 const Hero = () => {
-  const fullText = "It's Happening Now!";
+  const fullText = "And it's a Wrap!";
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
 
